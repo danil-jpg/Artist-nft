@@ -90,5 +90,16 @@
 			"}",
 		],
 		"description": "Шрифты"
+	},
+
+	"Мудиа запрос": {
+		//"scope": "javascript,typescript",
+		"prefix": "mmw",
+		"body": [		
+			"@media (max-width: $1px){",
+				"$0",
+			"}"
+		],
+		"description": "Мудиа запрос"
 	}
 }

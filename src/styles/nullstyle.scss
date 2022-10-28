@@ -21,10 +21,14 @@
   html, body {
     height: 100%;
     width: 100%;
-    font-size: 100%;
     line-height: 1;
-    font-size: 14px;
     -ms-text-size-adjust: 100%;
+  }
+  html{
+    font-size: 10px;
+  }
+  body{
+    font-size: 1.6rem;
   }
   input, button, textarea {
     font-family: inherit;
@@ -56,7 +60,7 @@
     font-weight: inherit;
   }
   body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Proxima Nova';
     font-weight: 400;
   }
 
@@ -69,9 +73,10 @@
     -o-flex-direction: column;
     flex-direction: column;
     min-height: 100%;
-}
+  }
 [class*=__container]{
-    max-width: 0px;
+    max-width: 1170px;
     margin: 0px auto;
     color: #fff;
+    padding: 0px 15px 0px;
 }
