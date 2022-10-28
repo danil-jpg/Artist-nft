@@ -1,0 +1,82 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus, :active {
+    outline: none;
+  }
+  a:focus, a:active {
+    outline: none;
+  } 
+  nav, footer, header, aside {
+    display: block;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+  }
+  html{
+    font-size: 10px;
+  }
+  body{
+    font-size: 1.6rem;
+  }
+  input, button, textarea {
+    font-family: inherit;
+  } 
+  input::-ms-clear {
+    display: none;
+  }  
+  button {
+    cursor: pointer;
+  }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  a, a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  body{
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+  }
+
+  .wrapper {
+    overflow: hidden;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+  }
+[class*=__container]{
+    max-width: 1170px;
+    margin: 0px auto;
+    color: #fff;
+    padding: 0px 15px 0px;
+}

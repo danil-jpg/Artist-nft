@@ -1,0 +1,283 @@
+.header__container {
+    overflow: hidden;
+}
+.header{
+    margin-top: 0.8rem;
+
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    margin-right: 2.6rem;
+}
+.header-menu__list {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    
+    position: relative;
+    li{
+        &:nth-child(1){
+            margin-right: 2.7rem;
+        }
+        &:nth-child(2){
+            margin-right: 2.55rem;
+        }
+        &:nth-child(3){
+            margin-right: 2.6rem;
+        }
+        &:nth-child(4){
+            margin-right: 2.7rem;
+        }
+        &:nth-child(5){
+            margin-right: 2.7rem;
+        }
+        &:nth-child(6){
+            margin-right: 2.6rem;
+        }
+    }
+}
+.header-menu__link {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: #C8D2DC;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.header-language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 7.4rem;
+    height: 3.5rem;
+
+    background: #212426;
+    border-radius: 0.7rem;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: #C8D2DC;
+
+    gap: 0.4rem;
+    cursor: pointer;
+}
+.header-block__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    margin-left: 0.8rem;
+}
+.header-btn__left {
+    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    border-radius: 1.2rem;
+    
+    width: 13rem;
+    height: 4.8rem;
+
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 0px 0px 0px;
+    p{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+.header-btn__right {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    border-radius: 1.2rem;
+    color: #1D1F21;
+
+    width: 14.7rem;
+    height: 4.8rem;
+
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 0px 0px 0px;
+}
+.header-burger{
+    display: none;
+}
+.header-burger__menu{
+    display: none;
+}
+@media (max-width: 1110px){
+    .header-logo{
+        flex-grow: 1;
+    }
+    .header-burger{
+        display: block;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .header-burger__menu{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 101;
+
+        background-image: url('../img/lending/star.svg');
+
+        width: 4.6rem;
+        height: 6.2rem;
+
+        cursor: pointer;
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            z-index: 102;
+            width: 1.5rem;
+            height: 0.3rem;
+
+            border-radius: 2rem;
+            background-color: #000;
+        }
+        &::before{
+            bottom: 3rem;
+            left: 1.6rem;
+            transform: rotate(45deg);
+        }
+        &::after{
+            bottom: 3rem;
+            left: 1.5rem;
+            transform: rotate(-45deg);
+        }
+    }
+    .header-menu__list{
+        transition: all 0.3s;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -150%;
+        z-index: 100;
+
+        width: 40rem;
+        height: 35rem;
+
+        padding-top: 4rem;
+        padding-left: 3rem;
+
+        align-items: flex-start;
+        &.active{
+            transition: all 0.6s;
+
+            background: rgb(113,90,233);
+            background: linear-gradient(94deg, rgba(113,90,233,1) 0%, rgba(29,31,33,1) 100%);
+            border-radius: 1.2rem;
+    
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 100;
+    
+            width: 40rem;
+            height: 35rem;
+    
+            padding-top: 4rem;
+            padding-left: 3rem;
+    
+            align-items: flex-start;
+        }
+        li{
+            width: 100%;
+            height: 40px;
+            padding-left: 1rem;
+            border-radius: 1.2rem;
+            &:nth-child(1){
+                margin: 0px 0px 0px 0px;
+            }
+            &:nth-child(2){
+                margin: 0px 0px 0px 0px;
+            }
+            &:nth-child(3){
+                margin: 0px 0px 0px 0px;
+            }
+            &:nth-child(4){
+                margin: 0px 0px 0px 0px;
+            }
+            &:nth-child(5){
+                margin: 0px 0px 0px 0px;
+            }
+            &:nth-child(6){
+                margin: 0px 0px 0px 0px;
+            }
+            transition: all 0.3s;
+            &:hover{
+                background: rgb(29,31,33);
+                background: linear-gradient(233deg, rgba(29,31,33,1) 0%, rgba(80,57,158,1) 100%);
+            }
+        }
+    }
+    .header-menu__link{
+        width: 100%;
+        height: 4rem;
+
+    }
+}
+
+@media (max-width: 640px){
+    .header-btn__left{
+        display: none;
+    }
+    .header-btn__right{
+        background-image: url('../img/lending/crown.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 0;
+        p{
+            display: none;
+        }
+    }
+}
+@media (max-width: 425px){
+    .header-menu__list{
+        &.active{
+            width: 100%;
+            border-radius: 0;
+            padding-left: 2rem;
+        }
+    }
+}
+@media (max-width: 375px){
+    .header-language{
+        display: none;
+    }
+    .header {
+        margin-top: 0.9rem;
+    }
+}
