@@ -2,7 +2,215 @@
     background-image: url('../img/lending/lending.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 3597px;
+    height: 100%;
     width: 100%;
+}
+.main-block__lendingPage{
     overflow: hidden;
+}
+.lending-discover__container {
+    display: flex;
+
+    margin-top: 8.7rem;
+}
+.lending-discover__content {
+    margin-top: 6.1rem;
+    padding-left: 1.2rem;
+}
+.lending-discover__social {
+    display: flex;
+    gap: 1.8rem;
+}
+.lending-discover__title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 6.5rem;
+
+    max-width: 47.5rem;
+
+    margin-top: 2.7rem;
+    margin-left: .3rem;
+}
+.lending-discover__inform-text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+
+    max-width: 27.1rem;
+
+    margin-top: 1.4rem;
+    margin-left: .3rem;
+}
+.lending-discover__btn {
+    display: flex;
+    align-items: center;
+
+    gap: 1.2rem;
+
+    margin-top: 4rem;
+    margin-left: .3rem;
+}
+.lending-discover__btn-left {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    border-radius: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.8rem;
+
+    width: 20.9rem;
+    height: 6.4rem;
+    p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.6rem; 
+        color: #1D1F21;
+    }
+}
+.lending-discover__btn-right {
+    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    border-radius: 1.6rem;
+
+    width: 14.5rem;
+    height: 6.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+.lending-discover__icon {
+    height: 63.3rem;
+    position: relative;
+    overflow: hidden;
+
+    margin-right: 1.5rem;
+    border-radius: 2.4rem;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-image: url('../img/lending/bg1.webp');
+        background-repeat: no-repeat;
+        background-position: top 0 right 0;
+        width: 46rem;
+        height: 100%;
+    }
+    img{
+        object-position: top -19px left -37px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1200px){
+    .lending-discover__container{
+        max-width: 960px;
+    }
+    .lending-discover__title{
+        font-size: 5.4rem;
+    }
+    .lending-discover__icon {
+        margin-right: 0rem;
+    }
+}
+
+@media (max-width: 992px){
+    .lending-discover__container{
+        max-width: 720px;
+        flex-direction: column;
+        gap: 33px;
+    }
+    .lending-discover__icon{
+        height: 34.9rem;
+        width: 34.5rem;
+
+        margin: 0 auto;
+        &::before{
+            background-image: url('../img/lending/bg2.webp');
+            top: 42px;
+        }
+        img{
+            object-position: top -68px left -16px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .lending-discover__container{
+        max-width: 540px;
+        margin-top: 0;
+    }
+    .lending-discover__content{
+        padding-left: 0;
+        margin-top: 7.1rem;
+    }
+    .lending-discover__title{
+        font-size: 3.6rem;
+        line-height: 4rem;
+        max-width: 26.3rem;
+        margin: 0px 0px 0px 0px;
+    }
+    .lending-discover__social{
+        display: none;
+    }
+    .lending-discover__inform-text{
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        margin: .8rem 0px 0px 0px;
+    }
+    .lending-discover__btn{
+        margin: 2.2rem 0px 0px 0px;
+    }
+    .lending-discover__btn-left{
+        width: 17rem;
+        height: 5.2rem; 
+        border-radius: 1.2rem;
+
+        padding-bottom: .2rem;
+        gap: .5rem;
+        p{
+            font-size: 1.5rem;
+            line-height: 2.6rem;
+        }
+        img{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    .lending-discover__btn-right{
+        width: 117px;
+        height: 5.2rem; 
+        border-radius: 1.2rem;
+        
+        padding-bottom: .2rem;
+        p{
+            font-size: 1.5rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+@media (max-width: 375px){
+    .lending{
+        background-image: url('../img/lending/lending-375.webp');
+    }
 }
