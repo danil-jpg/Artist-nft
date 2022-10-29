@@ -122,9 +122,364 @@
         object-fit: cover;
     }
 }
+.lending-biography__container {
+    display: flex;
 
+    margin-top: 11.8rem;
+    gap: 6.5rem;
+}
+.lending-biography__icon {
+    position: relative;
+    margin-left: 4.5rem;
+    padding-bottom: 2rem;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -2.7rem;
+        left: -3.9rem;
+
+        width: 100%;
+        height: 105%;
+
+        background-image: url('../img/lending/biography-back-1.webp');
+        background-repeat: no-repeat;
+        background-position: top 0 left 0;
+    }
+    img{
+        position: relative;
+        z-index: 1;
+    }
+}
+.lending-biography__text {
+    margin-top: 1.6rem;
+    >span{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        letter-spacing: 0.1em;
+    }
+    >h2{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 5rem;
+        color: #FCFFFF;
+
+        margin-top: 1px;
+    }
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        color: #FCFFFF;
+
+        max-width: 94%;
+    }
+}
+.lending-biography__text-first{
+    margin-top: 1.7rem;
+}
+.lending-biography__date {
+    display: flex;
+    margin-top: 4.1rem;
+    width: 97.3%;
+}
+.lending-biography__date-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    >span{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #C5FF98;
+
+        background: rgba(197, 255, 152, 0.1);
+        border-radius: 1rem;
+
+        width: 6rem;
+        height: 3.2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+.lending-biography__text-top{
+    display: none;
+}
+
+.lending-premium__container {
+    display: flex;
+    margin-top: 6.5rem;
+
+    background: linear-gradient(94.78deg, #6880FF 9.27%, #3CA7F4 50.77%, #8C45FF 84.06%);
+    border-radius: 24px;
+
+    position: relative; 
+    height: 446px;
+
+    max-width: 1140px;
+    overflow: hidden;
+}
+.lending-premium__text {
+    margin-top: 8.3rem;
+    margin-left: 9.5rem;
+    >h3{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 5rem;
+        color: #FCFFFF;
+        margin-top: 1.1rem;
+        position: relative;
+        z-index: 4;
+    }
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        color: #FCFFFF;
+        max-width: 442px;
+        margin-top: 1.3rem;
+        position: relative;
+        z-index: 4;
+    }
+    >a{
+        background: #1D1F21;
+        border-radius: 16px;
+        width: 167px;
+        height: 64px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.2rem;
+        padding-bottom: .2rem;
+        position: relative;
+        z-index: 4;
+        >p{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+}
+.lending-premium__diamond {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 86px;
+        right: 83px;
+        z-index: 3;
+        background-image: url('../img/lending/diamond-1.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 363.98px;
+        height: 26rem;
+    }
+}
+.lending-premium__diamond-block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -31px;
+        right: 263px;
+        z-index: 3;
+        background-image: url('../img/lending/diamond-2.webp');
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 182px;
+        height: 135px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -48px;
+        right: 0;
+        z-index: 3;
+        background-image: url('../img/lending/diamond-3.webp');
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 265px;
+        height: 262px;
+    }
+    img{
+        position: absolute;
+        top: -21px;
+        right: -165px;
+
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(2);
+        }
+
+    }
+}
+.lending-premium__container{
+    &:hover{
+        .lending-premium__diamond{
+            .lending-premium__diamond-block{
+                img{
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}
+// 
+.lending-swiper {
+}
+.lending-swiper__container {
+}
+.lending-swiper__block {
+    display: flex;
+}
+.swiper-wrapper {
+}
+.swiper-wrapper__lending {
+}
+.swiper-slide {
+}
+.swiper-slide__lending {
+}
+.lending-slide__block {
+    width: 350px;
+    height: 600px;
+    background: #212426;
+    border-radius: 12px;
+    padding: 17px 0px 0px 0px;
+    img{
+        margin-top: 18px;
+    }
+}
+.lending-slide__block-span-top {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.1em;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 20px;
+}
+.lending-slide__block-content {
+    padding: 0px 24px 0px;
+}
+.lending-slide__block-span-bottom {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.1em;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 20px;
+    display: none;
+}
+.lending-slide__block-title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FCFFFF;
+    margin-top: 16px;
+}
+.lending-slide__block-text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C8D2DC;
+    margin-top: 2px;
+}
+.lending-slide__block-buy {
+    margin-top: 20px;
+    border-top: 1px solid #FCFFFF;
+    padding: 13px 0px 17px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 12px; 
+        width: 116px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1D1F21;
+    }
+}
+.lending-slide__block-buy-text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #FCFFFF;
+}
+
+
+// ====================================================================
 @media (max-width: 1200px){
-    .lending-discover__container{
+    .lending-discover__container,
+    .lending-biography__container{
         max-width: 960px;
     }
     .lending-discover__title{
@@ -133,13 +488,32 @@
     .lending-discover__icon {
         margin-right: 0rem;
     }
+    .lending-biography__text{
+        >h2{
+            font-size: 3.4rem;
+            line-height: 3rem;
+        }
+        >p{
+            max-width: 100%;
+        }
+    }
 }
-
 @media (max-width: 992px){
-    .lending-discover__container{
+    .lending{
+        background-size: auto;
+    }
+    .lending-discover__container,
+    .lending-biography__container{
         max-width: 720px;
+    }
+    .lending-discover__container{
         flex-direction: column;
         gap: 33px;
+    }
+    .lending-biography__container{
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 6.1rem;
     }
     .lending-discover__icon{
         height: 34.9rem;
@@ -154,15 +528,73 @@
             object-position: top -68px left -16px;
         }
     }
+    .lending-discover__content {
+        margin-top: 0;
+        padding-left: 1.2rem;
+    }
+    .lending-biography__icon {
+        position: relative;
+        margin-left: 0;
+        margin: 41px auto 0px;
+        padding-bottom: 10px;
+        img{
+            width: 254px;
+            height: 326px;
+            border-radius: 24px;
+            transform: rotate(3.14deg);
+        }
+        &::before{
+            background-image: url('../img/lending/biography-back-2.webp');
+            background-size: auto;
+
+            top: -1.9rem;
+            left: -3.9rem;
+        }
+    }
+    .lending-biography__text{
+        >span{
+            display: none;
+        }
+        >h2{
+            display: none;
+        }
+        >p{
+            margin-top: 0;
+        }
+    }
+    .lending-biography__text-top{
+        display: block;
+        >span{
+            display: block;
+        }
+        >h2{
+            display: block;
+        }
+    }
+    .lending-biography__date {
+        gap: 1rem;
+    }
+    .lending-biography__text {
+        margin-top: 3rem;
+    }
 }
 @media (max-width: 768px){
-    .lending-discover__container{
+    .lending-discover__container,
+    .lending-biography__container,
+    .lending-premium__container{
         max-width: 540px;
+    }
+    .lending-discover__container{
         margin-top: 0;
     }
     .lending-discover__content{
         padding-left: 0;
         margin-top: 7.1rem;
+    }
+    .lending-premium__container{
+        height: 514px;
+        background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
+        border-radius: 24px;
     }
     .lending-discover__title{
         font-size: 3.6rem;
@@ -208,9 +640,146 @@
             line-height: 2.6rem;
         }
     }
+    .lending-premium__diamond-block {
+        img{
+            top: 60%;
+            right: 3%;
+        }
+        &::before{
+            height: 145px;
+            width: 173px;
+
+            top: 70%;
+            right: 82%;
+            transform: rotate(45deg);
+        }
+        &::after{
+            width: 162px;
+            height: 160px;
+
+            bottom: 0px;
+            right: 0;  
+        }
+    }
+    .lending-premium__diamond{
+        &::before{
+            top: 234px;
+            right: 175px;
+            width: 207px;
+            height: 149px; 
+            transform: rotate(-8deg); 
+        }
+    }
+    .lending-premium__text {
+        margin-top: 3.2rem;
+        margin-left: 2.6rem;
+        >p{
+            width: 95%;
+        }
+    }
 }
-@media (max-width: 375px){
+@media (max-width: 539px){
+    .lending-premium__container{
+        max-width: 345px;
+        margin-top: 0.7rem;
+    }
     .lending{
         background-image: url('../img/lending/lending-375.webp');
+        background-size: cover;
+    }
+    .lending-biography__text-top{
+        margin-top: 0;
+        >span{
+            font-size: 1.4rem;
+            line-height: 2.6rem;
+        }
+        >h2{
+            font-size: 2.6rem;
+            line-height: 3.4rem;
+            margin-top: 0;
+        }
+    }
+    .lending-biography__text{
+        >p{
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+        }
+    }
+    .lending-biography__date-block{
+        >span{
+            width: 60px;
+            height: 29px;
+        }
+        >p{
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
+    }
+    .lending-biography__date-block {
+        gap: 1.3rem;
+    }
+    .lending-biography__date {
+        gap: 0rem;
+        margin-top: 3.3rem;
+        width: 100%;
+    }
+    .lending-premium__text {
+        margin-top: 3.2rem;
+        margin-left: 1.1rem;
+        >img{
+            width: 24px;
+            height: 24px;
+        }
+        >h3{
+            font-size: 2.6rem;
+            line-height: 3.4rem;
+            margin-top: 0.4rem;
+        }
+        >p{
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            margin-top: 0.8rem;
+        }
+        >a{
+            width: 135px;
+            height: 52px;
+            margin-top: 2.4rem;
+            border-radius: 1.2rem;
+            p{
+                font-size: 1.5rem;
+                line-height: 2.6rem;
+            } 
+        }
+    }
+    .lending-premium__diamond::before {
+        top: 287px;
+        right: 60px;
+        width: 225px;
+        height: 175px;
+        transform: rotate(-8deg);
+    }
+    .lending-premium__diamond-block img {
+        top: 66%;
+        right: 0%;
+    }
+    .lending-premium__diamond-block::before{
+        background-image: url('../img/lending/diamond-2-2.webp');
+        top: 70.5%;
+        right: 50%;
+        transform: rotate(0deg);
+    }
+    .lending-premium__diamond-block::after{
+        background-image: url('../img/lending/diamond-3-3.webp');
+        bottom: -25px;
+        right: -32px;
+    }
+}
+@media (max-width: 374px){
+    .lending-discover__container,
+    .lending-biography__container{
+        max-width: 320px;
+    }
+    .lending-biography__icon::before {
+        left: -1.9rem;
     }
 }
