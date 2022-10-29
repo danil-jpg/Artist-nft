@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     @@include('html/head.html',{"title":"Artist-NFT"})
-    <body class="lending">
+    <body class="lending" id="lendingMain">
         @@include('html/header.html',{})
         <main class="main-block__lendingPage">
             <section class="lending-discover__container">
@@ -29,7 +29,138 @@
                     <img src="./img/lending/1.webp" alt="Img">
                 </picture>
             </section>
+            <section class="lending-biography__container">
+                <div class="lending-biography__text lending-biography__text-top">
+                    <span>BIOGRAPHY</span>
+                    <h2>Perchen Arts. Biography</h2>
+                </div>
+                <div class="lending-biography__icon">
+                    <img src="./img/lending/biography-1.webp" alt="Img">
+                </div>
+                <div class="lending-biography__text">
+                    <span>BIOGRAPHY</span>
+                    <h2>Perchen Arts. Biography</h2>
+                    <p class="lending-biography__text-first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Turpis egestes maecenas pharetra convallis posuere morbi leo urna molestie at. Diam in arcu curcus euismod quis viverra nibh cras. In ante metus dictum at tempor commodo ullamcorper. Ultrices eros in curcus turpis massa.</p>
+                    <div class="lending-biography__date">
+                        <div class="lending-biography__date-block">
+                            <span>2007</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="lending-biography__date-block">
+                            <span>2014</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="lending-biography__date-block">
+                            <span>2019</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lending-premium__container">
+                <div class="lending-premium__text">
+                    <img src="./img/lending/crown-premium.svg" alt="Crown">
+                    <h3>Get the premium access</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <a href="#">
+                        <p>Go to plans</p>
+                    </a>
+                </div>
+                <div class="lending-premium__diamond">
+                    <div class="lending-premium__diamond-block">
+                        <picture>
+                            <source srcset="./img/lending/circle2.svg" media="(max-width: 539px)">
+                            <img src="./img/lending/circle.svg" alt="circle">
+                        </picture> 
+                    </div>
+                </div>
+            </section>
+            <section class="lending-swiper">
+                <div class="lending-swiper__container">
+                    <div class="lending-swiper__block">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide__lending">
+                                <div class="lending-slide__block">
+                                    <span class="lending-slide__block-span-top">NFT</span>
+                                    <img src="./img/lending/swip-1.webp" alt="Img">
+                                    <div class="lending-slide__block-content">
+                                        <span class="lending-slide__block-span-bottom">NFT</span>
+                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
+                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
+                                        <div class="lending-slide__block-buy">
+                                            <p class="lending-slide__block-buy-text">$100 322</p>
+                                            <a href="#">Buy now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide__lending">
+                                <div class="lending-slide__block">
+                                    <span class="lending-slide__block-span-top">NFT</span>
+                                    <img src="./img/lending/swip-1.webp" alt="Img">
+                                    <div class="lending-slide__block-content">
+                                        <span class="lending-slide__block-span-bottom">NFT</span>
+                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
+                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
+                                        <div class="lending-slide__block-buy">
+                                            <p class="lending-slide__block-buy-text">$100 322</p>
+                                            <a href="#">Buy now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide__lending">
+                                <div class="lending-slide__block">
+                                    <span class="lending-slide__block-span-top">NFT</span>
+                                    <img src="./img/lending/swip-1.webp" alt="Img">
+                                    <div class="lending-slide__block-content">
+                                        <span class="lending-slide__block-span-bottom">NFT</span>
+                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
+                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
+                                        <div class="lending-slide__block-buy">
+                                            <p class="lending-slide__block-buy-text">$100 322</p>
+                                            <a href="#">Buy now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide__lending">
+                                <div class="lending-slide__block">
+                                    <span class="lending-slide__block-span-top">NFT</span>
+                                    <img src="./img/lending/swip-1.webp" alt="Img">
+                                    <div class="lending-slide__block-content">
+                                        <span class="lending-slide__block-span-bottom">NFT</span>
+                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
+                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
+                                        <div class="lending-slide__block-buy">
+                                            <p class="lending-slide__block-buy-text">$100 322</p>
+                                            <a href="#">Buy now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide__lending">
+                                <div class="lending-slide__block">
+                                    <span class="lending-slide__block-span-top">NFT</span>
+                                    <img src="./img/lending/swip-1.webp" alt="Img">
+                                    <div class="lending-slide__block-content">
+                                        <span class="lending-slide__block-span-bottom">NFT</span>
+                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
+                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
+                                        <div class="lending-slide__block-buy">
+                                            <p class="lending-slide__block-buy-text">$100 322</p>
+                                            <a href="#">Buy now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module"  src="scripts/main.js"></script>
 </html>
