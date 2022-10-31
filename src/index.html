@@ -80,82 +80,16 @@
             <section class="lending-swiper">
                 <div class="lending-swiper__container">
                     <div class="lending-swiper__block">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide__lending">
-                                <div class="lending-slide__block">
-                                    <span class="lending-slide__block-span-top">NFT</span>
-                                    <img src="./img/lending/swip-1.webp" alt="Img">
-                                    <div class="lending-slide__block-content">
-                                        <span class="lending-slide__block-span-bottom">NFT</span>
-                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
-                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
-                                        <div class="lending-slide__block-buy">
-                                            <p class="lending-slide__block-buy-text">$100 322</p>
-                                            <a href="#">Buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide__lending">
-                                <div class="lending-slide__block">
-                                    <span class="lending-slide__block-span-top">NFT</span>
-                                    <img src="./img/lending/swip-1.webp" alt="Img">
-                                    <div class="lending-slide__block-content">
-                                        <span class="lending-slide__block-span-bottom">NFT</span>
-                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
-                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
-                                        <div class="lending-slide__block-buy">
-                                            <p class="lending-slide__block-buy-text">$100 322</p>
-                                            <a href="#">Buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide__lending">
-                                <div class="lending-slide__block">
-                                    <span class="lending-slide__block-span-top">NFT</span>
-                                    <img src="./img/lending/swip-1.webp" alt="Img">
-                                    <div class="lending-slide__block-content">
-                                        <span class="lending-slide__block-span-bottom">NFT</span>
-                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
-                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
-                                        <div class="lending-slide__block-buy">
-                                            <p class="lending-slide__block-buy-text">$100 322</p>
-                                            <a href="#">Buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide__lending">
-                                <div class="lending-slide__block">
-                                    <span class="lending-slide__block-span-top">NFT</span>
-                                    <img src="./img/lending/swip-1.webp" alt="Img">
-                                    <div class="lending-slide__block-content">
-                                        <span class="lending-slide__block-span-bottom">NFT</span>
-                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
-                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
-                                        <div class="lending-slide__block-buy">
-                                            <p class="lending-slide__block-buy-text">$100 322</p>
-                                            <a href="#">Buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide__lending">
-                                <div class="lending-slide__block">
-                                    <span class="lending-slide__block-span-top">NFT</span>
-                                    <img src="./img/lending/swip-1.webp" alt="Img">
-                                    <div class="lending-slide__block-content">
-                                        <span class="lending-slide__block-span-bottom">NFT</span>
-                                        <h5 class="lending-slide__block-title">Title of picture or NFT</h5>
-                                        <p class="lending-slide__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor</p>
-                                        <div class="lending-slide__block-buy">
-                                            <p class="lending-slide__block-buy-text">$100 322</p>
-                                            <a href="#">Buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="swiper-wrapper swiper-wrapper__lending">
+                            @@include('html/lendingSwiper.html',{
+                                "swipLendingNumber":"1"
+                            })
+                            @@include('html/lendingSwiper.html',{
+                                "swipLendingNumber":"2"
+                            })
+                            @@include('html/lendingSwiper.html',{
+                                "swipLendingNumber":"3"
+                            })
                         </div>
                     </div>
                 </div>
