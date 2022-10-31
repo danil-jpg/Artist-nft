@@ -59,8 +59,8 @@ const paths = {
 
 function clean () {
   // return del(["docs/*", "!docs/src/img", "!docs/src/fonts"]);
-  // return del(["docs/*", "!docs/src/img"]);
-  return del(['dcs/*', '!docs/src/img', '!docs/src/fonts'])
+  return del(["docs/*"]);
+  // return del(['dcs/*', '!docs/src/img', '!docs/src/fonts'])
 }
 
 function htmlMin () {

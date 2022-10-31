@@ -371,6 +371,8 @@
 .lending-swiper {
 }
 .lending-swiper__container {
+    max-width: 1140px;
+    margin-top: 11px;
 }
 .lending-swiper__block {
     display: flex;
@@ -378,8 +380,19 @@
 .swiper-wrapper {
 }
 .swiper-wrapper__lending {
+    .swiper-slide-active {
+        transform: translateY(-32px) !important;
+    }
+    .swiper-slide-duplicate-prev,
+    .swiper-slide-duplicate-next,
+    .swiper-slide-duplicate-active{
+        opacity: 0.3;
+    }
 }
 .swiper-slide {
+}
+.semiopacity{
+    opacity: 50%;
 }
 .swiper-slide__lending {
 }
@@ -390,7 +403,7 @@
     border-radius: 12px;
     padding: 17px 0px 0px 0px;
     img{
-        margin-top: 18px;
+        margin-top: 19px;
     }
 }
 .lending-slide__block-span-top {
@@ -408,7 +421,7 @@
     margin-left: 20px;
 }
 .lending-slide__block-content {
-    padding: 0px 24px 0px;
+    padding: 0 21px 0 24px;
 }
 .lending-slide__block-span-bottom {
     background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
@@ -420,9 +433,10 @@
     font-family: 'Proxima Nova';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-top: 9px;
     display: none;
 }
 .lending-slide__block-title {
@@ -444,9 +458,9 @@
     margin-top: 2px;
 }
 .lending-slide__block-buy {
-    margin-top: 20px;
-    border-top: 1px solid #FCFFFF;
-    padding: 13px 0px 17px 0px;
+    margin-top: 19px;
+    border-top: 1px solid rgba(252, 255, 255, 0.05);
+    padding: 13px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -479,7 +493,8 @@
 // ====================================================================
 @media (max-width: 1200px){
     .lending-discover__container,
-    .lending-biography__container{
+    .lending-biography__container,
+    .lending-swiper__container{
         max-width: 960px;
     }
     .lending-discover__title{
@@ -497,13 +512,24 @@
             max-width: 100%;
         }
     }
+    .lending-slide__block{
+        width: 290px;
+        height: 565px;
+        overflow: hidden;
+        img{
+            height: 290px;
+            width: 100%;
+        }
+    }
+    
 }
 @media (max-width: 992px){
     .lending{
         background-size: auto;
     }
     .lending-discover__container,
-    .lending-biography__container{
+    .lending-biography__container,
+    .lending-swiper__container{
         max-width: 720px;
     }
     .lending-discover__container{
@@ -577,11 +603,47 @@
     .lending-biography__text {
         margin-top: 3rem;
     }
+    .lending-slide__block{
+        width: 100%;
+        height: 470px;
+        padding: 13px 13px 0px;
+        img{
+            width: 100%;
+            height: 253px;
+            border-radius: 12px;
+            inline-size: 95%;
+            margin: 0 auto;
+            display: flex;
+        }
+    }
+    .swiper-wrapper__lending {
+        .swiper-slide-active {
+            transform: translateY(0px) !important;
+        }
+        .swiper-slide-duplicate-prev,
+        .swiper-slide-duplicate-next,
+        .swiper-slide-duplicate-active{
+            opacity: 1;
+        }
+    }
+    .lending-slide__block-span-top{
+        display: none;
+    }
+    .lending-slide__block-span-bottom{
+        display: block;
+    }
+    .lending-slide__block-content {
+        padding: 0 0 0 0;
+    }
+    .lending-slide__block-title{
+        margin-top: 0;
+    }
 }
 @media (max-width: 768px){
     .lending-discover__container,
     .lending-biography__container,
     .lending-premium__container{
+    // .lending-swiper__container
         max-width: 540px;
     }
     .lending-discover__container{
@@ -677,10 +739,54 @@
             width: 95%;
         }
     }
+    .lending-slide__block{
+        width: 100%;
+        padding: 18px 13px 0;
+        height: 448px;
+    }
+
+    .lending-slide__block-span-top{
+        display: none;
+    }
+    .lending-slide__block-title{
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .lending-slide__block-text{
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 3px;
+    }
+    .lending-slide__block-content {
+        padding: 0 0 0 0px;
+    }
+    .lending-slide__block-buy{
+        margin-top: 12px;
+        padding: 11px 0px 0px;
+    }
+    .lending-slide__block-buy {
+        a{
+            width: 96px;
+            height: 40px;
+            border-radius: 8px;
+            margin-right: 5px;
+            transform: translateY(-1px);
+        }
+    }
+    .lending-slide__block-buy-text{
+        font-size: 22px;
+        line-height: 34px;
+    }
 }
 @media (max-width: 539px){
     .lending-premium__container{
         max-width: 345px;
+    }
+    .lending-swiper__container{
+        margin-top: 25px;
+    }
+    .lending-premium__container{
         margin-top: 0.7rem;
     }
     .lending{
@@ -772,6 +878,18 @@
         background-image: url('../img/lending/diamond-3-3.webp');
         bottom: -25px;
         right: -32px;
+    }
+    .lending-slide__block {
+        padding: 13px 14px 0 13px;
+    }
+    .lending-slide__block {
+        img{
+            inline-size: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
     }
 }
 @media (max-width: 374px){
