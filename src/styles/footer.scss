@@ -1,0 +1,111 @@
+.footer {
+    background-color: #212426;
+}
+.footer__container {
+}
+.footer-block {
+}
+.footer-block__top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(252, 255, 255, 0.05);
+    padding: 11px 0px 11px 0px;
+}
+.footer-block__top-text {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 13px;
+}
+.footer-block__text-1,
+.footer-block__text-2 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #C8D2DC;
+    opacity: 0.6;
+    transform: translateY(4px);
+}
+
+.footer-block__social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-right: 15px;
+    transform: translateY(3px);
+}
+.footer-block__bottom {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C8D2DC;
+    text-align: center;
+    margin: 11px 0px 0px 0px;
+    padding-bottom: 9px;
+}
+
+@media (max-width: 620px){
+    .footer-block{
+        padding-bottom: 25px;
+    }
+    .footer-block__top{
+        border: none;
+        flex-wrap: wrap;
+        padding: 21px 0px 0px 0px;
+        img{
+            order: 1;
+        }
+    }
+    .footer-block__social{
+        order: 2;
+        flex-grow: 1;
+        justify-content: end;
+        margin: 0px 0px 0px 0px;
+        transform: translateY(0px);
+    }
+    .footer-block__top-text{
+        order: 3;
+        flex-grow: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        width: 100%;
+        position: relative;
+        margin-top: 23px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 48%;
+            left: 0;
+            border: 1px solid rgba(252, 255, 255, 0.05);
+            width: 100%;
+        }
+    }
+    .footer-block__text-1, 
+    .footer-block__text-2 {
+        transform: translateY(0px);
+    }
+    .footer-block__bottom{
+        background: #1D1F21;
+        border-radius: 8px;
+        height: 48px;
+        margin: 22px 0px 0px 0px;
+        padding: 0 0 1px 0;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+@media (max-width: 350px){
+    .footer-block__social{
+        gap: 8px;
+    }
+}
