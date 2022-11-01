@@ -1,7 +1,6 @@
 .lending{
     background-image: url('../img/lending/lending.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position-x: center;
     height: 100%;
     width: 100%;
 }
@@ -158,7 +157,6 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
-
         font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
@@ -489,6 +487,153 @@
     color: #FCFFFF;
 }
 
+.lending-contact__container {
+    margin-top: 87px;
+    margin-bottom: 91px;
+}
+.lending-contact__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.lending-contact__span {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.1em;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-right: -1px;
+}
+.lending-contact__title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: #FCFFFF;
+    max-width: 54rem;
+}
+.lending-contact__form {
+    margin-top: 21px;
+}
+.lending-contact__form-block {
+    margin-top: 16px;
+    p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C8D2DC; 
+    }
+    input{
+        background: #212426;
+        border-radius: 9px;
+        width: 410px;
+        height: 64px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #C8D2DC;
+        padding: 0px 32px 0px 32px;
+        margin-top: 6px;
+    }
+    textarea{
+        resize: none;
+        background: #212426;
+        border-radius: 9px;
+        width: 410px;
+        height: 182px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #C8D2DC;
+        padding: 21px 32px 0px 32px;
+        margin-top: 7px;
+    }
+}
+.lending-contact__form-btn {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    border-radius: 16px;
+    width: 410px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1D1F21;
+    margin-top: 12px;
+    padding: 0px 0 2px 0;
+}
+.lending-contact__form-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    gap: 8px;
+    input{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    input+label{
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        width: 22px;
+        height: 22px;
+    }
+    input+label::before{
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #525960;
+        border-radius: 7px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+        cursor: pointer;
+    }
+    input:checked+label::before{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    }
+    p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C8D2DC;
+        a{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration-line: underline;
+            color: #86A8FF;
+            margin: 0 5px;
+        }
+    }
+}
 
 // ====================================================================
 @media (max-width: 1200px){
@@ -525,11 +670,12 @@
 }
 @media (max-width: 992px){
     .lending{
-        background-size: auto;
+        background-repeat: repeat;
     }
     .lending-discover__container,
     .lending-biography__container,
-    .lending-swiper__container{
+    .lending-swiper__container,
+    .lending-contact__container{
         max-width: 720px;
     }
     .lending-discover__container{
@@ -642,7 +788,8 @@
 @media (max-width: 768px){
     .lending-discover__container,
     .lending-biography__container,
-    .lending-premium__container{
+    .lending-premium__container,
+    .lending-contact__container{
     // .lending-swiper__container
         max-width: 540px;
     }
@@ -657,6 +804,9 @@
         height: 514px;
         background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
         border-radius: 24px;
+    }
+    .lending-contact__container{
+        margin: 36px auto 35px;
     }
     .lending-discover__title{
         font-size: 3.6rem;
@@ -891,6 +1041,53 @@
             margin: 0 auto;
         }
     }
+    .lending-contact__block{
+        align-items: flex-start;
+    }
+    .lending-contact__span{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .lending-contact__title{
+        font-size: 26px;
+        line-height: 34px;
+        text-align: left;
+        max-width: 90%;
+    }  
+    .lending-contact__form {
+        margin-top: -1px;
+        width: 100%;
+    }   
+    .lending-contact__form-block {
+        input{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+    }  
+    .lending-contact__form-btn{
+        width: 100%;
+    }
+    .lending-contact__form-agree{
+        margin-top: 14px;
+    }
+}
+@media (max-width: 375px){
+    .lending-discover__icon {
+        height: 34.9rem;
+        width: 103%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .lending-discover__icon::before {
+        top: 42px;
+        right: 10px;
+    }
+    .lending-discover__icon img {
+        -o-object-position: top -68px left -16px;
+        object-position: top -68px left -15px;
+    }
 }
 @media (max-width: 374px){
     .lending-discover__container,
@@ -899,5 +1096,13 @@
     }
     .lending-biography__icon::before {
         left: -1.9rem;
+    }
+    .lending-discover__icon {
+        width: 100%;
+    }
+    .lending-discover__icon::before {
+        top: 91px;
+        width: 100%;
+        background-size: contain;
     }
 }
