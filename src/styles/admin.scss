@@ -1,0 +1,213 @@
+.adminBody {
+    width: 100%;
+    background: url(../img/SignIn/adminBackground.webp) no-repeat;
+    background-size: cover;
+}
+.admin__content {
+    display: inline-block;
+
+    width: 100%;
+    margin-top: 193px;
+}
+.admin__wr {
+    width: per(410, 1440);
+    margin: 0 auto;
+}
+.admin__logo {
+    width: 100%;
+    text-align: center;
+}
+.admin__authorization {
+    width: 100%;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(36);
+    line-height: lh(50, 36);
+    text-align: center;
+    color: #fcffff;
+    margin-top: 10px;
+}
+.admin__togglers-wr {
+    width: 274px;
+    height: 70px;
+    background: #212426;
+    border-radius: 12px;
+    padding: 7px 8px;
+    margin: 0 auto;
+    margin-top: 11px;
+    display: flex;
+}
+.admin__log-in {
+}
+.admin__sign-in {
+}
+
+.admin__in {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: lh(28, 16);
+    color: #ffffff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transition: 0.3s;
+        box-shadow: 0px 0px 30px 0px rgba(9, 38, 202, 0.4);
+    }
+}
+
+.admin__checked {
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    border-radius: 12px;
+    width: 129px;
+    height: 56px;
+    color: #1d1f21;
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(18);
+    line-height: lh(24, 18);
+}
+.admin__sing-in-togglers {
+    display: none;
+}
+.admin__inputs-label {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(14);
+    line-height: lh(24, 14);
+    color: #fcffff;
+}
+.admin__radio {
+}
+
+.admin__inputs-label {
+    display: block;
+    cursor: pointer;
+    // user-select: none;
+    text-align: left;
+    & + .radio {
+        margin-top: 12px;
+    }
+    input {
+        display: none;
+        & + span {
+            display: inline-block;
+            position: relative;
+            padding-left: 30px;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                border-radius: 50%;
+                margin-right: 5px;
+                width: 16px;
+                height: 16px;
+                border: 1px solid #ccc;
+                background: #fff;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: #222;
+                position: absolute;
+                border-radius: 50%;
+                top: 3px;
+                left: 3px;
+                opacity: 0;
+                transform: scale(0, 0);
+                transition: all 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+            }
+        }
+        &:checked + span:after {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.admin__center-wr {
+    margin-top: 21px;
+}
+.admin__hint {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(21, 14);
+    color: #c8d2dc;
+}
+.admin__emeil-hint {
+}
+.admin__email-input {
+    margin-top: 9px;
+
+    color: #c8d2dc;
+}
+.admin__input {
+    width: 100%;
+    height: 64px;
+    background: #212426;
+    border-radius: 9px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: lh(21, 16);
+    color: #c8d2dc;
+    padding-left: 32px;
+    padding-bottom: 6px;
+}
+.admin__password-hint {
+    margin-top: 13px;
+}
+.admin__bottom-wr {
+    margin-top: 17px;
+}
+.admin__btn {
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    border-radius: 16px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(18);
+    line-height: lh(26, 16);
+    color: #1d1f21;
+    font-size: 18px;
+}
+.admin__bottom-hint {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(21, 14);
+    color: #c8d2dc;
+    text-align: center;
+    margin-top: 16px;
+    width: 100%;
+
+    span {
+        color: #86a8ff;
+        margin-left: 5px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .adminBody {
+    }
+}
