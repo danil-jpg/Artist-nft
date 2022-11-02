@@ -22,31 +22,36 @@
                         <div class="admin__sign-in admin__in">Sign up</div>
                     </div>
                     <div class="admin__sing-in-togglers">
-                        <label class="admin__inputs-label">
-                            <input
-                                name="radio"
-                                type="radio"
-                                class="admin__radio"
-                                checked
-                            />
-                            <span> Customer </span>
-                        </label>
-                        <label class="admin__inputs-label">
-                            <input
-                                name="radio"
-                                type="radio"
-                                class="admin__radio"
-                            />
-                            <span> Admin </span>
-                        </label>
-                        <label class="admin__inputs-label">
-                            <input
-                                name="radio"
-                                type="radio"
-                                class="admin__radio"
-                            />
-                            <span> Artist </span>
-                        </label>
+                        <p class="admin__radio-text admin__hint">
+                            Select your role
+                        </p>
+                        <div class="admin__labels-wr">
+                            <label class="admin__inputs-label">
+                                <input
+                                    name="radio"
+                                    type="radio"
+                                    class="admin__radio"
+                                    checked
+                                />
+                                <span> Customer </span>
+                            </label>
+                            <label class="admin__inputs-label">
+                                <input
+                                    name="radio"
+                                    type="radio"
+                                    class="admin__radio"
+                                />
+                                <span> Admin </span>
+                            </label>
+                            <label class="admin__inputs-label">
+                                <input
+                                    name="radio"
+                                    type="radio"
+                                    class="admin__radio"
+                                />
+                                <span> Artist </span>
+                            </label>
+                        </div>
                     </div>
                     <div class="admin__center-wr">
                         <p class="admin__hint admin__emeil-hint">E-mail</p>
@@ -62,15 +67,24 @@
                             class="admin__email-input admin__input"
                         />
                     </div>
-                    <div class="admin__bottom-wr">
+                    <div class="admin__bottom-wr admin__bottom-wr_log-in">
                         <button class="admin__btn">Send message</button>
                         <p class="admin__bottom-hint">
                             Don’t have account yet?
                             <span>Sign up</span>
                         </p>
                     </div>
+
+                    <div class="admin__bottom-wr admin__bottom-wr_sign-in">
+                        <button class="admin__btn">Send message</button>
+                        <p class="admin__bottom-hint">
+                            Already have accoun?
+                            <span id="log-in_bottom">Log in</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </main>
     </body>
+    <script type="module" src="scripts/main.js"></script>
 </html>
