@@ -57,12 +57,20 @@
 }
 .artWhich-grid__block-2{
     grid-area: 1 / 3 / 2 / 4; 
-    background-image: url('../img/artWhich/grid-2-lock.webp'); 
+    background-image: url('../img/artWhich/grid-2.webp'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
     overflow: hidden;
+    transition: all 0.3s;
+    &:hover{
+        background-image: url('../img/artWhich/grid-2-lock.webp');
+        .artWhich-grid__hover-lock{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
 .artWhich-grid__block-3{
     grid-area: 2 / 1 / 3 / 2;; 
@@ -72,11 +80,12 @@
     background-position: center;
     border-radius: 12px;
     overflow: hidden;
-        transition: all 0.3s;
-    &:hover{
+    transition: all 0.3s;
+    &:hover{ 
         .artWhich-grid__hove{
             visibility: visible;
             opacity: 1;
+
         }
     }
 }
@@ -282,6 +291,8 @@
     justify-content: center;
     border: 1px solid #525960;
     border-radius: 12px;
+    visibility: hidden;
+    opacity: 0;
     >p{
         background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
         -webkit-background-clip: text;
