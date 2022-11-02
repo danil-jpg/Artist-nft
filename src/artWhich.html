@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     @@include('html/head.html',{"title":"Artist-NFT"})
-<body>
+<body class="artWhich">
     @@include('html/header.html',{})
-    <main>
-        
+    <main class="artWhich-main">
+        <section class="artWhich-section__container">
+            <article class="artWhich-text">
+                <h1>Art which inspire</h1>
+                <p>Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
+            </article>
+            @@include('html/artWhichGrid.html',{})
+        </section>
     </main>
     @@include('html/footer.html',{})
 </body>

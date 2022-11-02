@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{"title":"Artist-NFT"})
+<body class="arts">
+    @@include('html/header.html',{})
+    <main class="arts-main">
+        <div class="arts-block__container">
+            <div class="arts-block__text">
+                <h1>Are you ready to get custom clothes?</h1>
+                <p>Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
+                <a href="#">
+                    <img src="./img/arts/bag.svg" alt="bag">
+                    <p>Get custom now</p>
+                </a>
+            </div>
+            <img src="./img/arts/block-top.webp" alt="img">
+        </div>
+        <div class="arts-grid__container">
+            @@include('html/artWhichGrid.html',{
+                "class":"arts-grid"
+            })
+        </div>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+    <script type="module"  src="scripts/main.js"></script>
+</html>
