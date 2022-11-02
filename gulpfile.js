@@ -16,6 +16,9 @@ import webpack from 'webpack-stream'
 import fileinclude from 'gulp-file-include'
 import webp from 'gulp-webp'
 import sourcemaps from 'gulp-sourcemaps'
+import gulpCssMin from 'gulp-cssmin'
+import ttf2woff from 'gulp-ttf2woff'
+import { stream as critical } from 'critical'
 const browserSync = name.create()
 const sass = gulpSass(dartSass)
 
@@ -59,9 +62,22 @@ const paths = {
 
 function clean () {
   // return del(["docs/*", "!docs/src/img", "!docs/src/fonts"]);
-  return del(["docs/*"]);
+  return del(['docs/*'])
   // return del(['dcs/*', '!docs/src/img', '!docs/src/fonts'])
 }
+
+gulp.task('critical', () => {
+  return gulp
+    .src('docs/*.html')
+    .pipe(
+      critical({
+        base: 'docs/',
+        inline: true,
+        css: ['docs/styles/main.min.css']
+      })
+    )
+    .pipe(gulp.dest('docs'))
+})
 
 function htmlMin () {
   return gulp
@@ -85,10 +101,12 @@ function htmlMin () {
         collapseWhitespace: true
       })
     )
+
     .pipe(gulpSize({ showFiles: true }))
     .pipe(gulp.dest(paths.htmlMin.dest))
     .pipe(browserSync.stream())
 }
+
 function html () {
   return gulp
     .src(paths.html.src)
@@ -98,6 +116,7 @@ function html () {
         basepath: '@file'
       })
     )
+
     .pipe(gulpSize({ showFiles: true }))
     .pipe(gulp.dest(paths.html.dest))
     .pipe(browserSync.stream())
@@ -129,6 +148,7 @@ function stylesMin () {
         })
       )
       .pipe(cleanCss({ level: 2 }))
+      .pipe(gulpCssMin())
       .pipe(
         rename({
           basename: 'main',
@@ -141,6 +161,30 @@ function stylesMin () {
       .pipe(browserSync.stream())
   )
 }
+
+gulp.task('stylesProdMin', () => {
+  return (
+    gulp
+      .src(paths.stylesMin.src)
+      .pipe(sass())
+      .pipe(
+        autoPrefixer({
+          cascade: false
+        })
+      )
+      .pipe(cleanCss({ level: 2 }))
+      .pipe(gulpCssMin())
+      .pipe(
+        rename({
+          basename: 'main',
+          suffix: '.min'
+        })
+      )
+      .pipe(gulpSize({ showFiles: true }))
+      .pipe(gulp.dest(paths.stylesMin.dest))
+  )
+}
+)
 
 function styles () {
   return (
@@ -194,8 +238,12 @@ function watch () {
   gulp.watch(paths.images.src, img)
 }
 
+gulp.task('fonts', fonts)
+
 function fonts () {
-  return gulp.src(paths.fonts.src).pipe(gulp.dest(paths.fonts.dest))
+  return gulp.src(paths.fonts.src)
+    .pipe(ttf2woff())
+    .pipe(gulp.dest(paths.fonts.dest))
 }
 
 function img () {
@@ -209,7 +257,7 @@ function img () {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(html, htmlMin, componentsHtml, stylesMin, styles, scripts, img, fonts),
+  gulp.parallel(styles, stylesMin, scripts, img, fonts, html, htmlMin, componentsHtml),
   watch
 )
 
