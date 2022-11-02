@@ -366,17 +366,12 @@
         }
     }
 }
-// 
-.lending-swiper {
-}
 .lending-swiper__container {
     max-width: 1140px;
     margin-top: 11px;
 }
 .lending-swiper__block {
     display: flex;
-}
-.swiper-wrapper {
 }
 .swiper-wrapper__lending {
     .swiper-slide-active {
@@ -388,12 +383,8 @@
         opacity: 0.3;
     }
 }
-.swiper-slide {
-}
 .semiopacity{
     opacity: 50%;
-}
-.swiper-slide__lending {
 }
 .lending-slide__block {
     width: 350px;
