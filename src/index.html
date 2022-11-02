@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blank</title>
-    </head>
-    <body></body>
+    @@include('html/head.html',{"title":"Artist-NFT"})
+    <body class="lending" id="lendingMain">
+        @@include('html/header.html',{})
+        <main class="main-block__lendingPage">
+            <section class="lending-discover__container">
+                <div class="lending-discover__content">
+                    <div class="lending-discover__social">
+                        <img src="./img/lending/inst.svg" alt="Instagram">
+                        <img src="./img/lending/twitter.svg" alt="Twitter">
+                        <img src="./img/lending/telegram.svg" alt="Telegram">
+                        <img src="./img/lending/pinterest.svg" alt="Pinterest">
+                    </div>
+                    <h1 class="lending-discover__title">We are here to inspire and share art</h1>
+                    <p class="lending-discover__inform-text">Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
+                    <div class="lending-discover__btn">
+                        <a href="#" class="lending-discover__btn-left">
+                            <img src="./img/lending/Crown-black.svg" alt="Crown">
+                            <p>Premium access</p> 
+                        </a>
+                        <a href="#" class="lending-discover__btn-right">
+                            <p>Discover</p>
+                        </a>
+                    </div>
+                </div>
+                <picture class="lending-discover__icon">
+                    <source srcset="./img/lending/2.webp" media="(max-width: 992px)">
+                    <img src="./img/lending/1.webp" alt="Img">
+                </picture>
+            </section>
+            <section class="lending-biography__container">
+                <div class="lending-biography__text lending-biography__text-top">
+                    <span>BIOGRAPHY</span>
+                    <h2>Perchen Arts. Biography</h2>
+                </div>
+                <div class="lending-biography__icon">
+                    <img src="./img/lending/biography-1.webp" alt="Img">
+                </div>
+                <div class="lending-biography__text">
+                    <span>BIOGRAPHY</span>
+                    <h2>Perchen Arts. Biography</h2>
+                    <p class="lending-biography__text-first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Turpis egestes maecenas pharetra convallis posuere morbi leo urna molestie at. Diam in arcu curcus euismod quis viverra nibh cras. In ante metus dictum at tempor commodo ullamcorper. Ultrices eros in curcus turpis massa.</p>
+                    <div class="lending-biography__date">
+                        <div class="lending-biography__date-block">
+                            <span>2007</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="lending-biography__date-block">
+                            <span>2014</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="lending-biography__date-block">
+                            <span>2019</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lending-premium__container">
+                <div class="lending-premium__text">
+                    <img src="./img/lending/crown-premium.svg" alt="Crown">
+                    <h3>Get the premium access</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <a href="#">
+                        <p>Go to plans</p>
+                    </a>
+                </div>
+                <div class="lending-premium__diamond">
+                    <div class="lending-premium__diamond-block">
+                        <picture>
+                            <source srcset="./img/lending/circle2.svg" media="(max-width: 539px)">
+                            <img src="./img/lending/circle.svg" alt="circle">
+                        </picture> 
+                    </div>
+                </div>
+            </section>
+            <section class="lending-swiper">
+                <div class="lending-swiper__container">
+                    <div class="lending-swiper__block">
+                        <div class="swiper-wrapper swiper-wrapper__lending">
+                            @@include('html/lendingSwiper.html',{
+                                "swipLendingNumber":"1"
+                            })
+                            @@include('html/lendingSwiper.html',{
+                                "swipLendingNumber":"2"
+                            })
+                            @@include('html/lendingSwiper.html',{
+                                "swipLendingNumber":"3"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lending-contact__container">
+                <div class="lending-contact__block">
+                    <span class="lending-contact__span">CONTACT ME</span>
+                    <h5 class="lending-contact__title">Want to apply your work or an question appeared?</h5>
+                    <form class="lending-contact__form">
+                        <div class="lending-contact__form-block">
+                            <p>Name</p>
+                            <input type="text" placeholder="Your name">
+                        </div>
+                        <div class="lending-contact__form-block">
+                            <p>Mail</p>
+                            <input type="email" placeholder="Your mail">
+                        </div>
+                        <div class="lending-contact__form-block">
+                            <p>Your question</p>
+                            <textarea name="text" placeholder="Your question"></textarea>
+                        </div>
+                        <button type="submit" class="lending-contact__form-btn">Send message</button>
+                        <div class="lending-contact__form-agree">
+                            <input type="checkbox" id="lending-agree" name="lending-agree">
+                            <label for="lending-agree"></label>
+                            <p>I agree with <a href="#">Privacy Policy</a> and <a href="#">Terms of use</a></p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html',{})
+    </body>
+    <script type="module"  src="scripts/main.js"></script>
 </html>
