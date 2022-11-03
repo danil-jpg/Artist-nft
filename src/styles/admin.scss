@@ -244,3 +244,91 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .admin__wr {
+        width: 410px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .admin__content {
+        margin-top: 18px;
+    }
+
+    .admin__wr {
+        width: 345px;
+    }
+    .admin__authorization {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: em(26);
+        line-height: lh(34, 26);
+        text-align: center;
+        color: #fcffff;
+        margin-top: 48px;
+    }
+
+    .admin__togglers-wr {
+        height: 49px;
+        width: 100%;
+        margin: 16px auto 0;
+    }
+
+    .admin__center-wr {
+        margin-top: 30px;
+    }
+    .adminBody {
+        background: url(../img/SignIn/adminBackgroundMobile.webp) no-repeat;
+        background-size: cover;
+    }
+
+    .admin__togglers-wr {
+        padding: 3.5px 8px;
+    }
+    .admin__checked {
+        width: 164px;
+        height: 42px;
+        background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+        border-radius: 12px;
+
+        border-radius: 12px;
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1d1f21;
+    }
+
+    .adminPageSingIn {
+        .admin__content {
+            margin-top: 18px;
+        }
+        .admin__sing-in-togglers {
+            margin-top: 25px;
+        }
+        .admin__labels-wr {
+            width: 99.4%;
+        }
+        .admin__center-wr {
+            margin-top: 24px;
+        }
+        .admin__bottom-hint {
+            width: 97%;
+            span {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .admin__content {
+        width: 100%;
+    }
+    .admin__wr {
+        width: 95%;
+    }
+}
