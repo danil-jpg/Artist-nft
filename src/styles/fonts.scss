@@ -7,11 +7,11 @@
 }
 
 @font-face {
-	font-family: Proxima Nova;
-	font-display: swap;
-	src: url("../fonts/ProximaNova-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
+    font-family: Proxima Nova;
+    font-display: swap;
+    src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
@@ -34,6 +34,22 @@
     font-family: Proxima Nova;
     font-display: swap;
     src: url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Manrope;
+    font-display: swap;
+    src: url("../fonts/Manrope-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Manrope;
+    font-display: swap;
+    src: url("../fonts/Manrope-bold.woff") format("woff");
     font-weight: 800;
     font-style: normal;
 }

@@ -1,0 +1,58 @@
+.someBody {
+    background: #1d1f21;
+}
+.module-header {
+    width: 100%;
+    height: 64px;
+}
+.module-header__wr {
+    width: per(1226, 1280);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+.module-header__logo {
+    margin-left: 7px;
+    margin-top: -4px;
+}
+.module-header__exit-wr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 81px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.module-header__exit-text {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(19, 14);
+    color: #c8d2dc;
+}
+
+.module-header__burger-wr {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .module-header__burger-wr {
+        display: block;
+        cursor: pointer;
+    }
+    .module-header__exit-wr {
+        display: none;
+    }
+    .module-header__wr {
+        width: 91%;
+    }
+    .module-header__logo {
+        margin-left: 6px;
+    }
+    .module-header__burger-wr {
+        margin-right: -2px;
+        margin-top: -5px;
+    }
+}
