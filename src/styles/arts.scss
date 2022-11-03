@@ -3,7 +3,7 @@
     background-position-x: center;
     background-size: cover;
     height: 100%;
-    width: 100%;
+    width: 100%; 
 }
 .arts-block__container {
     display: flex;
@@ -58,6 +58,7 @@
 }
 .arts-grid{
     margin-top: 54px;
+    margin-bottom: 0;
 
     .artWhich-grid__block-2 { grid-area: 1 / 1 / 2 / 2; }
     .artWhich-grid__block-1 { grid-area: 1 / 2 / 2 / 4; }
@@ -69,4 +70,194 @@
     .artWhich-grid__block-8 { grid-area: 4 / 1 / 5 / 2; }
     .artWhich-grid__block-9 { grid-area: 4 / 2 / 5 / 3; }
     .artWhich-grid__block-10 { grid-area: 4 / 3 / 5 / 4; }
+}
+
+.arts-custom {
+
+    // .arts-custom__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 63px;
+    }
+
+    // .arts-custom__span
+
+    &__span {
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 0.1em;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 0 3px;
+    }
+
+    // .arts-custom__title
+
+    &__title {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #FCFFFF;
+        margin: 1px 0 9px 2px;
+    }
+
+    // .arts-custom__drop-menu
+
+    &__drop-menu {
+        margin-top: 22px;
+        p{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #C8D2DC;
+        }
+        select{
+            background-color: #212426;
+            border-radius: 9px;
+            width: 410px;
+            height: 64px;
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            color: #FCFFFF;
+
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            padding: 0px 0px 0px 33px;
+            margin-top: 7px;
+
+            background-image: url('../img/arts/Outline.svg');
+            background-repeat: no-repeat;
+            background-position: right 19px top 50%;
+        }
+    }
+
+    // .arts-custom__color-block
+
+    &__color-block {
+        transform: translate(-20px, 0px);
+        margin-top: 26px;
+        p{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #C8D2DC;
+        }
+    }
+
+    // .arts-custom__color
+
+    &__color {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    // .arts-custom__color-1
+
+    &__color-1 {
+        transform: translateX(1px);
+    }
+
+    // .arts-custom__color-2
+
+    &__color-2 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-3
+
+    &__color-3 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-4
+
+    &__color-4 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-5
+
+    &__color-5 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-6
+
+    &__color-6 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-7
+
+    &__color-7 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-8
+
+    &__color-8 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-9
+
+    &__color-9 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-10
+
+    &__color-10 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-11
+
+    &__color-11 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-12
+
+    &__color-12 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-13
+
+    &__color-13 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-14
+
+    &__color-14 {
+        transform: translateX(5px);
+    }
+
+    // .arts-custom__color-15
+
+    &__color-15 {
+        transform: translateX(5px);
+    }
 }
