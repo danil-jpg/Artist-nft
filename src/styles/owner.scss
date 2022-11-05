@@ -40,7 +40,7 @@
 .module__content {
     width: 100vw;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 1fr 80.8%;
 }
 .module__left-wr {
     width: 100%;
@@ -80,6 +80,9 @@
     width: 100%;
     height: 800px;
     background-color: cadetblue;
+    margin-top: -22px;
+    display: grid;
+    grid-template-columns: 33.3% 1fr;
 }
 
 .module__footer {
@@ -120,6 +123,75 @@
     font-size: em(12);
     line-height: lh(20, 12);
     color: #c8d2dc;
+}
+
+.module__right-wr {
+    background-color: #212326;
+    border-radius: 32px 0px 0px 0px;
+}
+.chat-list {
+    border-right: 1px solid #525960;
+}
+.chat-list__title {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(14);
+    line-height: lh(20, 14);
+    color: #fcffff;
+    margin-top: 32px;
+    margin-bottom: 39px;
+    text-align: start;
+    padding-left: 28px;
+}
+.chat-list__user-wr {
+    width: 287px;
+    height: 64px;
+    background: #1d1f21;
+    border-radius: 14px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20.9% 1fr;
+    margin-bottom: 8px;
+    img {
+        display: grid;
+        justify-self: center;
+        align-self: center;
+    }
+}
+.chat-list__right {
+    padding-top: 16px;
+}
+.chat-list__user-top_wr {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}
+.chat-list__user_name {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(12);
+    line-height: lh(15, 12);
+    color: #c8d2dc;
+}
+.chat-list__user_time {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(12);
+    line-height: lh(15, 12);
+    color: #c8d2dc;
+    opacity: 0.6;
+}
+.chat-list__message-written {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(15, 14);
+    color: #fcffff;
+    margin-top: 3px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -206,4 +278,32 @@
             border-radius: 50%;
         }
     }
+    //
+    .module__right-wr {
+        grid-template-columns: 1fr;
+        border: none;
+        border-radius: 0;
+        background: #1d1f21;
+    }
+
+    .chat-list {
+        border: none;
+    }
+
+    .chat-list__title {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fcffff;
+        margin-top: 18px;
+        margin-bottom: 39px;
+        text-align: start;
+        padding-left: 15px;
+    }
+    .chat-list__user-wr {
+        display: none;
+    }
+    //
 }
