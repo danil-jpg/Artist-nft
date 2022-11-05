@@ -567,4 +567,25 @@
         background-image: url('../img/auction/about-back-mob.webp');
         height: 368px;
     }
+    .auctionPage{
+        background: #1D1F21;
+    }
+}
+@media (max-width: 374px){
+    .auction__block{
+        >img {
+            height: 295px;
+            width: 100%;
+        }
+    }
+    .auction__block-price {
+        height: fit-content;
+        background-size: cover;
+        margin-top: 28px;
+        padding: 27px 16px 15px;
+        border-radius: 15px;
+    }
+    .auction-line {
+        width: 260px;
+    }
 }
