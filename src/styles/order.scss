@@ -435,6 +435,81 @@
             }
         }
     }
+    .nft__header {
+        display: none;
+    }
+    .nft__item-wr:nth-of-type(1) {
+        position: relative;
+
+        &::after {
+            content: "Name of product";
+            position: absolute;
+            top: -26px;
+            left: 26px;
+            font-weight: 400;
+            font-size: 0.875em;
+            line-height: 1.0714285714;
+            color: #fcffff;
+        }
+
+        .nft__code-wr {
+            position: relative;
+            &::after {
+                content: "Crypto";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+        .nft__btn {
+            position: relative;
+            &::after {
+                content: "Status";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+
+        .nft__price-text {
+            position: relative;
+            &::after {
+                content: "Price";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+
+        .nft__date-text {
+            position: relative;
+            &::after {
+                content: "Date";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+    }
+    .nft__items-wr {
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width: 1280px) {
     .orders__header-wr {
