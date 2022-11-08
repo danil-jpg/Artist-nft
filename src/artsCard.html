@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{"title":"Artist-NFT"})
+<body class="artsCard" id="lendingMain">
+    @@include('html/header.html',{})
+    <main class="artsCard-main">
+        @@include('html/arctCard.html',{})
+        <section class="arts-card-proccess__container">
+            <div class="arts-card__proccess-span">
+                <img src="./img/artsCard/video.svg" alt="video">
+                <p>PROCCESS</p>
+            </div>
+            <div class="arts-card__proccess-lock">
+                <span>avalaible for premium</span>
+                <h2>CONTENT LOCKED</h2>
+                <a href="#">
+                    <p>Unlock</p>
+                    <img src="./img/artsCard/arrow.svg" alt="arrow-next">
+                </a>
+            </div>
+        </section>
+        @@include('html/contact.html',{
+            'class': 'arts-card__contact'
+        })
+    </main> 
+    @@include('html/footer.html',{})
+</body>
+    <script type="module"  src="scripts/main.js"></script>
+</html>

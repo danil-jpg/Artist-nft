@@ -1,0 +1,587 @@
+.auctionPage{    
+    background-image: url('../img/auction/back.webp');
+    background-position-x: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%; 
+}
+.auction__container {
+    max-width: 1140px;
+}
+.auction__block {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+}
+.auction__block-inform {
+    margin-top: 8px;
+}
+.auction__text-span {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.1em;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+.auction__text-title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #FCFFFF;
+    margin-top: 1px;
+}
+.auction__text-inform {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-top: 26px;
+}
+.auction__text-inform-1 {
+    width: 126px;
+    height: 57px;
+    border-right: 1px solid #525960;
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+        width: 100%;
+    }
+}
+.auction__text-inform-2 {
+    width: 136px;
+    height: 57px;
+    border-right: 1px solid #525960;
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+        width: 100%;
+    }
+    >span{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 34px;
+        color: #FCFFFF;
+        position: relative;
+        top: 1px;
+    }
+}
+.auction__text-inform-3 {
+    width: 180px;
+    height: 57px;
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+        width: 100%;
+    }
+}
+.auction__block-price {
+    background-image: url('../img/auction/block-bak.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 318px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 23px 43px 0px 42px;
+    margin-top: 52px;
+}
+.auction__block-span {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.1em;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+}
+.auction__block-summ {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 24px;
+    color: #FCFFFF;
+}
+.auction__block-btn {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 11px;
+    >a{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 12px; 
+        width: 177px;
+        height: 64px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #1D1F21;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 2px 0;
+    }
+}
+.auction__block-btn-1 {
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C8D2DC;
+    }
+    >input{
+        background: #2C2F33;
+        border-radius: 9px;
+        width: 266px;
+        height: 64px;
+        padding: 0px 0px 3px 32px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(200, 210, 220, 0.6);
+        margin-top: 7px;
+    }
+}
+.auction__block-time {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 24px;
+    width: 185px;
+    display: flex;
+    justify-content: space-between;
+}
+.auction__block-live {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #C8D2DC;
+}
+.auction__block-text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C8D2DC;
+    text-align: center;
+    max-width: 345px;
+    margin-top: 14px;
+}
+
+
+.auction-about__container {
+    max-width: 1140px;
+    margin-top: 32px;
+    margin-bottom: 56px;
+    padding: 0px 0px 0px 15px;
+}
+.auction-about__line {
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px; 
+        color: #C8D2DC;
+    }
+}
+.auction-line{
+    background: #212426;
+    border-radius: 57px;
+    width: 540px;
+    height: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 57px;
+        width: 124px;
+        height: 5px;
+    }
+}
+.auction-about__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.auction-about__content-text {
+    background: #212426;
+    border-radius: 12px;
+    width: 730px;
+    height: 575px;
+    padding: 33px 21px 0px 30px;
+}
+.auction-about__text {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    padding: 0px 0px 0px 15px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 1px;
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 34px;
+        width: 4px;
+        height: 28px;
+    }
+}
+.auction-about__text-big {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FCFFFF;
+    margin-top: 18px;
+    display: block;
+}
+.auction-about__text-smale {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FCFFFF;
+    margin-top: 28px;
+    display: block;
+}
+.auction-about__text-btn{
+    background: #2C2F33;
+    border-radius: 6px;
+    width: 107px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    >p{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+.auction-about__content-work {
+    background-image: url('../img/auction/about-back.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 345px;
+    height: 514px;
+    padding: 32px 26px 0px 26px;
+}
+.auction-about__title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #FCFFFF;
+    margin-top: 4px;
+}
+.auction-about__work-text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FCFFFF;
+    margin-top: 8px;
+}
+.auction-about__work-social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 20px 0px 0px -1px;
+}
+.auction-hidden{
+    display: none;
+}
+@media (max-width: 1200px){
+    .auction__container,
+    .auction-about__container{
+        max-width: 960px;
+    }
+    .auction-about__container{
+        padding: 0px 15px;
+    }
+    .auction__block{
+        flex-direction: column;
+        align-items: center;
+        >img{
+            width: fit-content;
+            height: 435px;
+            margin: 0px auto 0px;
+        }
+    }
+    .auction-about__block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .auction-about__content-text{
+        width: 100%;
+        height: fit-content;
+        padding: 33px 21px 15px 30px;
+    }
+    .auction-about__content-work{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
+            border-radius: 12px;
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}
+@media (max-width: 768px){
+    .auction__container{
+        max-width: 540px;
+    }
+    .auction__block-inform{
+        width: 100%;
+    }
+    .auction-line{
+        width: 345px;
+        &::before{
+            width: 97px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .auction__container{
+        max-width: 100%;
+    }
+    .auction__block{
+        margin-top: 32px;
+        gap: 13px;
+        >img{
+            height: 345px;
+        }
+    }
+    .auction__text-span{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .auction__text-title{
+        font-size: 23px;
+        line-height: 34px;
+        margin-top: 1px;
+    }
+    .auction__text-inform{
+        flex-direction: column;
+        margin-top: 11px;
+        gap: 20px;
+    }
+    .auction__text-inform-1{
+        width: 100%;
+        border-right: none;
+        br{display: none;}
+        height: auto;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(82, 89, 96, 1);
+        >p{
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+    .auction__text-inform-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-right: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(82, 89, 96, 1);
+        >p{
+            font-size: 15px;
+            line-height: 24px;
+        }
+        >span{
+            font-size: 18px;
+            line-height: 24px;
+            transform: translate(-1px, -5px);
+        }
+    }
+    .auction__text-inform-3{
+        width: 100%;
+        height: auto;
+        border-right: none;
+        transform: translateY(-4px);
+        >p{
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+    .auction__block-price{
+        background-image: url('../img/auction/block-bak-mob.webp');
+        height: 434px;
+        margin-top: 28px;
+        padding: 27px 16px 0px;
+    }
+    .auction__block-span,
+    .auction__block-summ {
+        transform: translate(1px, 1px);
+    }
+    .auction__block-btn{
+        flex-direction: column;
+        margin-top: 23px;
+        width: 100%;
+        gap: 10px;
+        >a{
+            height: 52px;
+            width: 100%;
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+    .auction__block-btn-1{
+        width: 100%;
+        >input{
+            width: 100%;
+        }
+    }
+    .auction__block-time{
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 22px;
+        width: 151px;
+    }
+    .auction__block-live{
+        margin-top: 1px;
+    }
+    .auction__block-text{
+        width: 100%;
+        margin-top: 15px;
+        padding: 16px 18px 0px 18px;
+        border-top: 1px solid #525960;
+    }
+    .auction-about__container{
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+    .auction-line{
+        background: #2C2F33;
+        margin-top: 4px;
+    }
+    .auction-about__content-text{
+        padding: 16px 13px 23px 16px;
+    }
+    .auction-about__text{
+        max-width: 225px;
+        &::before {
+            top: 6px;
+            left: 0px;
+            height: 34px;
+        }
+    }
+    .auction-about__text-big {
+        margin-top: 6px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .auction-about__text-smale {
+        margin-top: 24px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .auction-about__text-btn{
+        display: flex;
+        margin-top: 15px;
+    }
+    .auction-about__content-work{
+        align-items: flex-start;
+        background-image: url('../img/auction/about-back-mob.webp');
+        height: 368px;
+    }
+    .auctionPage{
+        background: #1D1F21;
+    }
+}
+@media (max-width: 374px){
+    .auction__block{
+        >img {
+            height: 295px;
+            width: 100%;
+        }
+    }
+    .auction__block-price {
+        height: fit-content;
+        background-size: cover;
+        margin-top: 28px;
+        padding: 27px 16px 15px;
+        border-radius: 15px;
+    }
+    .auction-line {
+        width: 260px;
+    }
+}
