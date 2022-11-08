@@ -162,7 +162,10 @@ function stylesMin () {
   )
 }
 
-gulp.task('stylesProdMin', () => {
+gulp.task('stylesProdMin', stylesProdMin()
+)
+
+function stylesProdMin () {
   return (
     gulp
       .src(paths.stylesMin.src)
@@ -184,7 +187,6 @@ gulp.task('stylesProdMin', () => {
       .pipe(gulp.dest(paths.stylesMin.dest))
   )
 }
-)
 
 function styles () {
   return (
@@ -261,6 +263,12 @@ const build = gulp.series(
   watch
 )
 
+const prod = gulp.series(
+  clean, stylesProdMin, critical
+)
+
+// Цепочка прод пока не рабочая
+
 export { clean }
 export { styles }
 export { watch }
@@ -268,4 +276,5 @@ export { build }
 export { scripts }
 export { img }
 export { componentsHtml }
+export { prod }
 export default build
