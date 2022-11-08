@@ -167,6 +167,9 @@
     color: #1d1f21;
     margin-left: per(17, 989);
 }
+.orders__items-wr_mobile {
+    display: none;
+}
 @media screen and (min-width: 1281px) {
     .orders__header-wr {
         display: none;
@@ -307,5 +310,36 @@
 @media screen and (max-width: 1280px) {
     .orders__header-wr {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .orders__item-wr {
+        display: none;
+    }
+    .orders__items-wr_mobile {
+        display: block;
+    }
+    .orders__header-wr {
+        display: none;
+    }
+    .module__right-wr_orders {
+        background: transparent;
+    }
+    .orders__items-wr {
+    }
+    .orders__items-wr_mobile {
+    }
+    .orders__item_mob-title {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: em(20);
+        line-height: lh(30, 20);
+        color: #fcffff;
+        margin-top: 17px;
+    }
+    .module__right-wr_orders {
+        grid-column: 1/3;
     }
 }
