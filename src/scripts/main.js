@@ -6,6 +6,7 @@ import auction from './modules/auction.js'
 import pricing from './modules/pricing.js'
 import payment from './modules/payment.js'
 import admin from './modules/admin.js'
+import messager from './modules/messager.js'
 
 window.addEventListener('DOMContentLoaded', () => {
   const lendingPage = document.querySelector('#lendingMain')
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const auctionPage = document.querySelector('#auctionPage')
   const pricingPage = document.querySelector('#pricingPage')
   const paymentPage = document.querySelector('#paymentPage')
+  const messagerPage = document.querySelector('.MessagerHTML')
 
   if (lendingPage) {
     burger()
@@ -32,5 +34,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   if (adminPage) {
     admin()
+  }
+
+  if (messagerPage) {
+    messager()
   }
 })
