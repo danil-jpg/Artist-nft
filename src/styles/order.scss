@@ -310,6 +310,50 @@
     margin-left: 76px;
 }
 
+//
+
+.module__right-wr__workers {
+    background: #212426;
+    border-radius: 32px 0px 0px 0px;
+    width: 100%;
+}
+.workers {
+}
+.workers__header {
+    width: 100%;
+}
+.workers__name {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(15, 14);
+    color: #fcffff;
+}
+.module__right-wr__workers {
+    margin-top: -22px;
+}
+.workers__header {
+    margin-top: 27px;
+}
+
+.workers__name {
+    display: inline-block;
+}
+
+.workers__name:nth-of-type(1) {
+    margin-left: 29px;
+}
+.workers__name:nth-of-type(2) {
+    margin-left: 96px;
+}
+.workers__name:nth-of-type(3) {
+    margin-left: 232px;
+}
+.workers__name:nth-of-type(4) {
+    margin-left: 378px;
+}
+
 @media screen and (min-width: 1281px) {
     .orders__header-wr {
         display: none;
