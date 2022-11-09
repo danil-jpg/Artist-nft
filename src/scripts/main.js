@@ -5,6 +5,7 @@ import lending from './modules/lending.js'
 import auction from './modules/auction.js'
 import pricing from './modules/pricing.js'
 import payment from './modules/payment.js'
+import forum from './modules/forum.js'
 import admin from './modules/admin.js'
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const auctionPage = document.querySelector('#auctionPage')
   const pricingPage = document.querySelector('#pricingPage')
   const paymentPage = document.querySelector('#paymentPage')
+  const forumPage = document.querySelector('#forumPage')
 
   if (lendingPage) {
     burger()
@@ -29,6 +31,10 @@ window.addEventListener('DOMContentLoaded', () => {
   if (paymentPage){
     burger()
     payment()
+  }
+  if (forumPage) {
+    burger()
+    forum()
   }
   if (adminPage) {
     admin()

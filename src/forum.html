@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{"title":"Artist-NFT"})
+<body class="forumPage" id="forumPage">
+    @@include('html/header.html',{})
+    <main class="forum-main">
+        <section class="forum-swiper">
+            <div class="forum-swiper-block__container">
+                <h1 class="forum__title">Forum</h1>
+                <p class="forum__text">Popular questions</p>
+
+                <div class="swiper-forum">
+                    <div class="swiper-wrapper">
+                        @@include('html/forumSwiper.html',{})
+                        @@include('html/forumSwiper.html',{
+                            "class-forum":"slide-forum-2"
+                        })
+                        @@include('html/forumSwiper.html',{
+                            "class-forum":"slide-forum-3"
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forum-search__container">
+            <div class="forum-search__block-left">
+                <form class="forum-search__form">
+                    <input type="search" placeholder="Search" class="forum-search__input">
+                    <button class="forum-btn__input">
+                        <p>Search</p>
+                    </button>
+                </form>
+                @@include('html/forumComents.html',{
+                    "style":"forum-coments__text",
+                    "class-input":"forum-coments__input-none"
+                })
+                @@include('html/forumComents.html',{
+                    "class-btn":"forum-coments__btn-none",
+                    "class-input":"forum-coments__input-none"
+                })
+                @@include('html/forumComents.html',{
+                    "style":"forum-coments__text"
+                })
+            </div>
+            <div class="forum-search__block-right"></div>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+    <script type="module"  src="scripts/main.js"></script>
+</html>
