@@ -36,8 +36,6 @@ function messager () {
     const triggersText = document.querySelectorAll('.module__tab-text')
     const triggersImg = document.querySelectorAll('.module__tab-trigger-wr img')
 
-    console.log(triggersImg)
-
     triggers.forEach((item, index) => {
       item.addEventListener('click', (e) => {
         triggersText.forEach(item => {
@@ -72,11 +70,14 @@ function messager () {
           triggersImg[index].setAttribute('src', 'img/Owner/order-active.svg')
         }
         if (index === 2) {
-          triggersImg[index].setAttribute('src', 'img/Owner/nft-order-active.svg')
+          if (item.classList.contains('module__spec-spec') === false) {
+            triggersImg[index].setAttribute('src', 'img/Owner/nft-order-active.svg')
+          }
         }
         if (index === 3) {
           triggersImg[index].setAttribute('src', 'img/Owner/workers-active.svg')
         }
+        console.log()
       })
     })
   }
