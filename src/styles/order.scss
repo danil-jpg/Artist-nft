@@ -699,7 +699,8 @@
     }
     .nft__title_mob {
         margin-top: 17px;
-        margin-bottom: 11px;
+
+        margin-bottom: 9px;
     }
     .nft__title_mob {
         font-family: "Proxima Nova";
@@ -723,12 +724,16 @@
         border-radius: 14px;
         width: 100%;
         padding: 0 19px 0 18px;
+        display: inline-block;
+        margin-bottom: 10px;
     }
     .nft__item-top-wr {
         display: flex;
         align-items: center;
 
-        margin-top: 26px;
+        margin-bottom: 14px;
+
+        margin-top: 16px;
 
         * {
         }
@@ -762,6 +767,8 @@
     .nft__item_center_wr {
         display: flex;
         justify-content: space-between;
+        margin-top: 22px;
+        margin-bottom: 10px;
     }
     .nft__item_center_text {
         font-family: "Proxima Nova";
@@ -777,6 +784,14 @@
         align-items: center;
         background: #212426;
         border-radius: 8px;
+        width: 148px;
+        height: 37px;
+        margin-top: -12px;
+        margin-right: 5px;
+
+        img {
+            transform: translate(9px, -1px);
+        }
     }
     .nft__bottom_copy-text {
         font-family: "Proxima Nova";
@@ -785,8 +800,17 @@
         font-size: 12px;
         line-height: 20px;
         color: #fcffff;
+        margin-left: -9px;
+        margin-right: 0px;
+        img {
+            margin-left: 0px;
+            transform: translate(9px, -1px);
+        }
     }
     .nft__item_bottom-wr {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
     }
     .nft__bottom_price {
         font-family: "Proxima Nova";
@@ -803,6 +827,7 @@
         font-size: 16px;
         line-height: 28px;
         color: #fcffff;
+        margin-top: -4px;
     }
     .nft__item_btn_mobile {
         width: per(308, 345);
@@ -818,6 +843,11 @@
         line-height: 28px;
         color: #c5ff98;
         text-align: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .module__right-wr__nft {
+        background: none;
     }
 }
 

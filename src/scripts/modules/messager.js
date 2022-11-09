@@ -3,7 +3,7 @@ import Swiper from 'swiper'
 function messager () {
   const menuTrigger = document.querySelector('.module-header__burger-wr')
   const menu = document.querySelector('.module__left-wr')
-  const elemToBlur = document.querySelector('.module__right-wr')
+  const elemToBlur = document.querySelectorAll('.module__content>*:not(.module__left-wr)')
   const triggersForChat = document.querySelectorAll('.chat-list__user-wr')
   const chatBlock = document.querySelector('.chat')
   const returnBtn = document.querySelector('.chat__top-mobile-wr img')
@@ -16,7 +16,9 @@ function messager () {
 
   menuTrigger.addEventListener('click', () => {
     menu.classList.toggle('active')
-    elemToBlur.classList.toggle('elemToBlue')
+    elemToBlur.forEach(item => {
+      item.classList.toggle('elemToBlue')
+    })
   })
 
   returnBtn.addEventListener('click', () => {
