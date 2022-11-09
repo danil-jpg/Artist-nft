@@ -644,10 +644,152 @@
     .nft__items-wr {
         margin-top: 50px;
     }
+    .workers__header {
+        display: none;
+    }
+    .workers__body {
+        margin-top: 64px;
+    }
+    .workers__item-wr:first-of-type {
+        .workers__t-shirt {
+            position: relative;
+            &::after {
+                content: "Name";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__mail {
+            position: relative;
+            &::after {
+                content: "Mail";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__comment {
+            position: relative;
+            &::after {
+                content: "Comment";
+                position: absolute;
+                top: -55px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__btn {
+            position: relative;
+            &::after {
+                content: "Plan";
+                position: absolute;
+                top: -63px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1280px) {
     .orders__header-wr {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .workers__header {
+        display: none;
+    }
+    .workers__body {
+        padding: 0;
+    }
+    .workers__body {
+        margin-top: 64px;
+    }
+    .workers__item-wr:first-of-type {
+        .workers__t-shirt {
+            position: relative;
+            &::after {
+                content: "Name";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__mail {
+            position: relative;
+            &::after {
+                content: "Mail";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__comment {
+            position: relative;
+            &::after {
+                content: "Comment";
+                position: absolute;
+                top: -55px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__btn {
+            position: relative;
+            &::after {
+                content: "Plan";
+                position: absolute;
+                top: -63px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
     }
 }
 
@@ -981,6 +1123,8 @@
     .module__right-wr__nft {
         background: none;
     }
+
+    //
 }
 
 @media screen and (max-width: 1024px) {
