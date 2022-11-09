@@ -29,5 +29,58 @@ function messager () {
     spaceBetween: 28,
     slidesPerView: 4.6
   })
+
+  function tabs () {
+    const triggers = document.querySelectorAll('.module__tab-trigger-wr')
+    const tabBlocks = document.querySelectorAll('.module__content>*:not(.module__left-wr)')
+    const triggersText = document.querySelectorAll('.module__tab-text')
+    const triggersImg = document.querySelectorAll('.module__tab-trigger-wr img')
+
+    console.log(triggersImg)
+
+    triggers.forEach((item, index) => {
+      item.addEventListener('click', (e) => {
+        triggersText.forEach(item => {
+          item.classList.remove('module__tab-text_chosen')
+        })
+
+        tabBlocks.forEach(item => {
+          item.style.display = 'none'
+        })
+        triggersImg.forEach((item, index) => {
+          if (index === 0) {
+            item.setAttribute('src', 'img/Owner/messages-default.svg')
+          }
+          if (index === 1) {
+            item.setAttribute('src', 'img/Owner/orders-icon.svg')
+          }
+          if (index === 2) {
+            item.setAttribute('src', 'img/Owner/nft-orders-icon.svg')
+          }
+          if (index === 3) {
+            item.setAttribute('src', 'img/Owner/workers-icon.svg')
+          }
+        })
+
+        triggersText[index].classList.add('module__tab-text_chosen')
+        tabBlocks[index].style.display = 'grid'
+
+        if (index === 0) {
+          triggersImg[index].setAttribute('src', 'img/Owner/message-icon-active.webp')
+        }
+        if (index === 1) {
+          triggersImg[index].setAttribute('src', 'img/Owner/order-active.svg')
+        }
+        if (index === 2) {
+          triggersImg[index].setAttribute('src', 'img/Owner/nft-order-active.svg')
+        }
+        if (index === 3) {
+          triggersImg[index].setAttribute('src', 'img/Owner/workers-active.svg')
+        }
+      })
+    })
+  }
+
+  tabs()
 }
 export default messager

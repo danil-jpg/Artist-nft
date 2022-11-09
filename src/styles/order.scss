@@ -1,12 +1,21 @@
 .module__right-wr_messanger {
-    display: none;
+    // display: none;
 }
 .module__right-wr_orders {
+    display: none;
+}
+.module__right-wr__nft {
     display: none;
 }
 .nft__items-wr_mob {
     display: none;
 }
+
+.workers-img {
+    width: 20px;
+    height: 21px;
+}
+
 .module__right-wr_orders {
     width: 100%;
     min-height: 836px;
