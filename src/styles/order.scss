@@ -4,7 +4,9 @@
 .module__right-wr_orders {
     display: none;
 }
-
+.nft__items-wr_mob {
+    display: none;
+}
 .module__right-wr_orders {
     width: 100%;
     min-height: 836px;
@@ -683,10 +685,147 @@
     .module__right-wr_orders {
         grid-column: 2/3;
     }
+
+    //
+    .module__right-wr_orders {
+        grid-column: 2/3;
+    }
+    .nft {
+        display: none;
+    }
+
+    .nft__items-wr_mob {
+        display: block;
+    }
+    .nft__title_mob {
+        margin-top: 17px;
+        margin-bottom: 11px;
+    }
+    .nft__title_mob {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height, or 150% */
+
+        /* text */
+
+        color: #fcffff;
+    }
+    .nft__items-wr_mob {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .nft__item-wr_mob {
+        height: 248px;
+        background: #2c2f33;
+        border-radius: 14px;
+        width: 100%;
+        padding: 0 19px 0 18px;
+    }
+    .nft__item-top-wr {
+        display: flex;
+        align-items: center;
+
+        margin-top: 26px;
+
+        * {
+        }
+    }
+    .nft__item_img_mob {
+    }
+    .nft__item-top-text_wr {
+        margin-left: 13px;
+        margin-top: 3px;
+    }
+    .nft__item-top-text {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #fcffff;
+    }
+    .nft__item-top-text_bottom {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #c8d2dc;
+    }
+    .nft__item_hor-line {
+        border: 1px solid #363d47;
+        width: 100%;
+    }
+    .nft__item_center_wr {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nft__item_center_text {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #fcffff;
+    }
+    .nft__item_center_copy-wr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #212426;
+        border-radius: 8px;
+    }
+    .nft__bottom_copy-text {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fcffff;
+    }
+    .nft__item_bottom-wr {
+    }
+    .nft__bottom_price {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #fcffff;
+    }
+    .nft__bottom_price-num {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #fcffff;
+    }
+    .nft__item_btn_mobile {
+        width: per(308, 345);
+        display: block;
+        margin: 0 auto;
+        height: 40px;
+        background: rgba(197, 255, 152, 0.1);
+        border-radius: 10px;
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #c5ff98;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .module__right-wr_orders {
+        grid-column: 1/3;
+    }
+    .module__right-wr__nft {
         grid-column: 1/3;
     }
 }
