@@ -1,6 +1,9 @@
 .module__right-wr_messanger {
     // display: none;
 }
+.module__right-wr__workers {
+    display: none;
+}
 .module__right-wr_orders {
     display: none;
 }
@@ -335,6 +338,8 @@
 }
 .workers__header {
     margin-top: 27px;
+
+    margin-bottom: 21px;
 }
 
 .workers__name {
@@ -354,6 +359,80 @@
     margin-left: 378px;
 }
 
+.workers__body {
+    width: 100%;
+    padding-right: 15px;
+}
+.workers__item-wr {
+    width: 100%;
+    background: #1d1f21;
+    border-radius: 14px;
+    max-width: 990px;
+    margin: 0 auto;
+
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    > * {
+        display: inline-block;
+    }
+}
+.workers__t-shirt {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(16);
+    line-height: lh(21, 16);
+    color: #fcffff;
+    margin-left: 23px;
+}
+.workers__mail {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(14);
+    line-height: lh(21, 14);
+    color: #fcffff;
+    margin-left: 67px;
+}
+.workers__comment {
+    width: 406px;
+    margin-left: 77px;
+}
+.workers__comment_text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(21, 14);
+    color: #fcffff;
+}
+.workers__comment_link {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(12);
+    line-height: lh(18, 12);
+    text-decoration-line: underline;
+    color: #86a8ff;
+    margin-top: -1px;
+    transform: translate(0, 2px);
+}
+.workers__btn {
+    width: 116px;
+    height: 40px;
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    border-radius: 8px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(14);
+    line-height: lh(20, 14);
+    color: #1d1f21;
+    margin-left: 31px;
+}
 @media screen and (min-width: 1281px) {
     .orders__header-wr {
         display: none;
