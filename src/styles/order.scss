@@ -1,5 +1,22 @@
 .module__right-wr_messanger {
+    // display: none;
+}
+.module__right-wr__workers {
     display: none;
+}
+.module__right-wr_orders {
+    display: none;
+}
+.module__right-wr__nft {
+    display: none;
+}
+.nft__items-wr_mob {
+    display: none;
+}
+
+.workers-img {
+    width: 20px;
+    height: 21px;
 }
 
 .module__right-wr_orders {
@@ -170,6 +187,256 @@
 .orders__items-wr_mobile {
     display: none;
 }
+.module__right-wr__nft {
+    background: #212426;
+    border-radius: 32px 0px 0px 0px;
+    margin-top: -21px;
+}
+.nft {
+    width: 100%;
+    display: inline-block;
+}
+.nft__header {
+    width: 100%;
+    margin-top: 26px;
+}
+.nft__name {
+    display: inline-block;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(15, 14);
+    color: #fcffff;
+}
+
+.nft__name:nth-of-type(1) {
+    margin-left: 29px;
+}
+
+.nft__name:nth-of-type(2) {
+    margin-left: 99px;
+}
+
+.nft__name:nth-of-type(3) {
+    margin-left: 295px;
+}
+
+.nft__name:nth-of-type(4) {
+    margin-left: 123px;
+}
+
+.nft__name:nth-of-type(5) {
+    margin-left: 112px;
+}
+
+.nft__items-wr {
+    display: inline-block;
+    width: 98%;
+    margin-top: 19px;
+}
+.nft__item-wr {
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: #1d1f21;
+    border-radius: 14px;
+    height: 90px;
+    margin-bottom: 8px;
+}
+.nft__title-img {
+    margin-left: 26px;
+}
+.nft__title-text {
+    margin-left: 20px;
+
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: lh(28, 16);
+    color: #fcffff;
+}
+.nft__code-wr {
+    background: #212426;
+    border-radius: 13px;
+    width: 310px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.nft__code-text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(14);
+    line-height: lh(20, 14);
+    color: #fcffff;
+}
+.nft__code-img {
+    margin-left: 26px;
+}
+.nft__btn {
+    width: 103px;
+    height: 40px;
+    background: rgba(197, 255, 152, 0.1);
+    border-radius: 10px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: lh(28, 16);
+    color: #c5ff98;
+    margin-left: 27px;
+}
+.nft__price-text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(16);
+    line-height: lh(28, 16);
+    color: #fcffff;
+    margin-left: 55px;
+}
+.nft__date-text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(16);
+    line-height: lh(28, 16);
+    color: #c8d2dc;
+    margin-left: 76px;
+}
+
+//
+
+.module__right-wr__workers {
+    background: #212426;
+    border-radius: 32px 0px 0px 0px;
+    width: 100%;
+}
+.workers {
+}
+.workers__header {
+    width: 100%;
+}
+.workers__name {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(15, 14);
+    color: #fcffff;
+}
+.module__right-wr__workers {
+    margin-top: -22px;
+}
+.workers__header {
+    margin-top: 27px;
+
+    margin-bottom: 21px;
+}
+
+.workers__name {
+    display: inline-block;
+}
+
+.workers__name:nth-of-type(1) {
+    margin-left: 29px;
+}
+.workers__name:nth-of-type(2) {
+    margin-left: 96px;
+}
+.workers__name:nth-of-type(3) {
+    margin-left: 232px;
+}
+.workers__name:nth-of-type(4) {
+    margin-left: 378px;
+}
+
+.workers__body {
+    width: 100%;
+    padding-right: 15px;
+}
+.workers__item-wr {
+    width: 100%;
+    background: #1d1f21;
+    border-radius: 14px;
+    max-width: 990px;
+    margin: 0 auto;
+
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    > * {
+        display: inline-block;
+    }
+}
+.workers__t-shirt {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(16);
+    line-height: lh(21, 16);
+    color: #fcffff;
+    margin-left: 23px;
+}
+.workers__mail {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(14);
+    line-height: lh(21, 14);
+    color: #fcffff;
+    margin-left: 67px;
+}
+.workers__comment {
+    width: 406px;
+    margin-left: 77px;
+}
+.workers__comment_text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(21, 14);
+    color: #fcffff;
+}
+.workers__comment_link {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(12);
+    line-height: lh(18, 12);
+    text-decoration-line: underline;
+    color: #86a8ff;
+    margin-top: -1px;
+    transform: translate(0, 2px);
+}
+.workers__btn {
+    width: 116px;
+    height: 40px;
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    border-radius: 8px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(14);
+    line-height: lh(20, 14);
+    color: #1d1f21;
+    margin-left: 31px;
+}
+
+.workers_mob {
+    display: none;
+}
 @media screen and (min-width: 1281px) {
     .orders__header-wr {
         display: none;
@@ -306,10 +573,227 @@
             }
         }
     }
+    .nft__header {
+        display: none;
+    }
+    .nft__item-wr:nth-of-type(1) {
+        position: relative;
+
+        &::after {
+            content: "Name of product";
+            position: absolute;
+            top: -26px;
+            left: 26px;
+            font-weight: 400;
+            font-size: 0.875em;
+            line-height: 1.0714285714;
+            color: #fcffff;
+        }
+
+        .nft__code-wr {
+            position: relative;
+            &::after {
+                content: "Crypto";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+        .nft__btn {
+            position: relative;
+            &::after {
+                content: "Status";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+
+        .nft__price-text {
+            position: relative;
+            &::after {
+                content: "Price";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+
+        .nft__date-text {
+            position: relative;
+            &::after {
+                content: "Date";
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-weight: 400;
+                font-size: 0.875em;
+                line-height: 1.0714285714;
+                color: #fcffff;
+            }
+        }
+    }
+    .nft__items-wr {
+        margin-top: 50px;
+    }
+    .workers__header {
+        display: none;
+    }
+    .workers__body {
+        margin-top: 64px;
+    }
+    .workers__item-wr:first-of-type {
+        .workers__t-shirt {
+            position: relative;
+            &::after {
+                content: "Name";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__mail {
+            position: relative;
+            &::after {
+                content: "Mail";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__comment {
+            position: relative;
+            &::after {
+                content: "Comment";
+                position: absolute;
+                top: -55px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__btn {
+            position: relative;
+            &::after {
+                content: "Plan";
+                position: absolute;
+                top: -63px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1280px) {
     .orders__header-wr {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .workers__header {
+        display: none;
+    }
+    .workers__body {
+        padding: 0;
+    }
+    .workers__body {
+        margin-top: 64px;
+    }
+    .workers__item-wr:first-of-type {
+        .workers__t-shirt {
+            position: relative;
+            &::after {
+                content: "Name";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__mail {
+            position: relative;
+            &::after {
+                content: "Mail";
+                position: absolute;
+                top: -72px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__comment {
+            position: relative;
+            &::after {
+                content: "Comment";
+                position: absolute;
+                top: -55px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+        .workers__btn {
+            position: relative;
+            &::after {
+                content: "Plan";
+                position: absolute;
+                top: -63px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
     }
 }
 
@@ -329,6 +813,7 @@
     .orders__items-wr {
     }
     .orders__items-wr_mobile {
+        padding: 0;
     }
     .orders__item_mob-title {
         font-family: "Proxima Nova";
@@ -337,9 +822,461 @@
         font-size: em(20);
         line-height: lh(30, 20);
         color: #fcffff;
+        width: 92%;
+        margin: 0 auto;
+        display: block;
         margin-top: 17px;
+        margin-bottom: 10px;
     }
     .module__right-wr_orders {
         grid-column: 1/3;
+    }
+    .orders__item_mob-wr {
+        width: per(345, 375);
+        height: 289px;
+        background: #2c2f33;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        padding: 19px 19px 17px 19px;
+    }
+    .orders__item_mob-wr_top {
+        margin-bottom: 5px;
+    }
+    .orders__item_mob-circle {
+        width: 32px;
+        height: 32px;
+        background: #eb8032;
+        box-sizing: content-box;
+        display: inline-block;
+        margin-right: 14px;
+        border-radius: 50%;
+    }
+    .orders__item_mob_top-text-wr {
+        display: inline-block;
+        margin-top: -2px;
+    }
+    .orders__item_mob_text {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: lh(21, 16);
+        color: #fcffff;
+    }
+    .orders__item_mob_text_bottom {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: em(14);
+        line-height: lh(21, 14);
+        color: #fcffff;
+        display: block;
+    }
+    .orders__items_mob-wr {
+        margin: 0 auto;
+        display: block;
+        width: 92%;
+        width: 100%;
+    }
+    .orders__item_mob-wr {
+        margin: 0 auto;
+        display: block;
+        padding: 21px 19px 17px 18px;
+    }
+    .orders__item_mob-wr_center {
+        width: 100%;
+    }
+    .orders__item_mob_hor-line {
+        height: 0px;
+        border: 1px solid #373d47;
+        width: 100%;
+    }
+    .orders__item_mob_text-wr_center {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+    .orders__item_mob_text-size {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: em(14);
+        line-height: lh(15, 14);
+        color: #fcffff;
+    }
+    .orders__item_mob_text-size-num {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 600;
+        font-size: em(14);
+        line-height: lh(21, 14);
+
+        color: #fcffff;
+    }
+
+    .orders__item_mob-wr_bottom {
+        margin-top: 11px;
+        display: flex;
+        gap: 26px;
+        justify-content: space-between;
+    }
+    .orders__item_mob-wr_bottom_left {
+        width: 50%;
+    }
+    .orders__item_mob-text_left {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: em(14);
+        line-height: lh(15, 14);
+        color: #fcffff;
+    }
+    .orders__item_mob-text_left_bottom {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: em(14);
+        line-height: lh(18, 14);
+        color: #fcffff;
+        margin-top: 7px;
+        display: block;
+    }
+    .orders__item_mob-wr_bottom_right {
+        width: 50%;
+    }
+    .orders__item_mob_btn {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: em(14);
+        line-height: lh(20, 14);
+        color: #1d1f21;
+        background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+        border-radius: 8px;
+        width: 100%;
+        height: 40px;
+        margin-top: 17px;
+    }
+    .orders__item_mob-wr {
+        margin-bottom: 10px;
+    }
+    .module__right-wr_orders {
+        grid-column: 2/3;
+    }
+
+    //
+    .module__right-wr_orders {
+        grid-column: 2/3;
+    }
+    .nft {
+        display: none;
+    }
+
+    .nft__items-wr_mob {
+        display: block;
+    }
+    .nft__title_mob {
+        margin-top: 17px;
+
+        margin-bottom: 9px;
+    }
+    .nft__title_mob {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height, or 150% */
+
+        /* text */
+
+        color: #fcffff;
+    }
+    .nft__items-wr_mob {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .nft__item-wr_mob {
+        height: 248px;
+        background: #2c2f33;
+        border-radius: 14px;
+        width: 100%;
+        padding: 0 19px 0 18px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .nft__item-top-wr {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 14px;
+
+        margin-top: 16px;
+
+        * {
+        }
+    }
+    .nft__item_img_mob {
+    }
+    .nft__item-top-text_wr {
+        margin-left: 13px;
+        margin-top: 3px;
+    }
+    .nft__item-top-text {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #fcffff;
+    }
+    .nft__item-top-text_bottom {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #c8d2dc;
+    }
+    .nft__item_hor-line {
+        border: 1px solid #363d47;
+        width: 100%;
+    }
+    .nft__item_center_wr {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+        margin-bottom: 10px;
+    }
+    .nft__item_center_text {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #fcffff;
+    }
+    .nft__item_center_copy-wr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #212426;
+        border-radius: 8px;
+        width: 148px;
+        height: 37px;
+        margin-top: -12px;
+        margin-right: 5px;
+
+        img {
+            transform: translate(9px, -1px);
+        }
+    }
+    .nft__bottom_copy-text {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fcffff;
+        margin-left: -9px;
+        margin-right: 0px;
+        img {
+            margin-left: 0px;
+            transform: translate(9px, -1px);
+        }
+    }
+    .nft__item_bottom-wr {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nft__bottom_price {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #fcffff;
+    }
+    .nft__bottom_price-num {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #fcffff;
+        margin-top: -4px;
+    }
+    .nft__item_btn_mobile {
+        width: per(308, 345);
+        display: block;
+        margin: 0 auto;
+        height: 40px;
+        background: rgba(197, 255, 152, 0.1);
+        border-radius: 10px;
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #c5ff98;
+        text-align: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .module__right-wr__nft {
+        background: none;
+    }
+
+    .workers {
+        display: none;
+    }
+
+    //
+
+    .workers_mob {
+        display: block;
+    }
+    .workers__title_mob {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fcffff;
+    }
+    .workers__items_mob-wr {
+        width: 100%;
+    }
+    .workers__item_mob-wr {
+    }
+    .workers__item_text_mob-1 {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #fcffff;
+    }
+    .workers__item_text_mob-2 {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #fcffff;
+    }
+
+    .workers__hor-line {
+        border: 1px solid #373d47;
+    }
+    .workers__item_text_mob-3 {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #fcffff;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .workers__item_text_mob-4 {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #86a8ff;
+    }
+    .workers__item_btn_mob {
+        width: per(308, 345);
+        height: 40px;
+        background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+        border-radius: 8px;
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1d1f21;
+    }
+    .workers__title_mob {
+        margin-top: 19px;
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+    .workers__items_mob-wr {
+        margin: 0 auto;
+        width: 92%;
+        margin-top: 9px;
+        /* margin-bottom: 30px; */
+    }
+
+    .workers__item_mob-wr {
+        background: #2c2f33;
+        width: 100%;
+        border-radius: 14px;
+        height: 248px;
+        padding-left: 18px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .workers__item_text_mob-1 {
+        margin-top: 20px;
+    }
+
+    .workers__hor-line {
+        margin-top: 14px;
+        width: 94%;
+    }
+
+    .workers__item_text_mob-3 {
+        /* display: none; */
+        margin-top: 14px;
+    }
+
+    .workers__item_text_mob-4 {
+        /* display: none; */
+        margin-top: 1px;
+    }
+
+    .workers__item_btn_mob {
+        margin-top: 18px;
+        /* display: none; */
+        width: 94%;
+    }
+    .module__right-wr__workers {
+        grid-column: 2/3;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .module__right-wr_orders {
+        grid-column: 1/3;
+    }
+    .module__right-wr__nft {
+        grid-column: 1/3;
+    }
+    .module__right-wr__workers {
+        grid-column: 1/3;
+    }
+    .workers__item_btn_mob {
+        margin-top: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 852px) {
+    .workers__item_btn_mob {
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 785px) {
+    .orders__item_mob_btn {
+        margin-top: 27px;
     }
 }
