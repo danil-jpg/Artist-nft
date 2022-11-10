@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{"title":"Artist-NFT"})
+<body class="artsVideo" id="lendingMain">
+    @@include('html/header.html',{})
+    <main class="artsVideo-main">
+        @@include('html/arctCard.html',{})
+        <section class="arts-video__container">
+            <div class="arts-video__span">
+                <img src="./img/Arts-video/video.svg" alt="Video">
+                <span>PROCCESS</span>
+            </div>
+            <div class="video-arts__content">
+                <picture class="video-arts__teg">
+                    <source srcset="./img/Arts-video/video-block-min.webp" media="(max-width: 768px)">
+                    <img src="./img/Arts-video/video-block.webp" alt="Img" >
+                </picture>
+                <div class="video-arts__content-prem">
+                    <div class="video-arts__content-acc">
+                        <img src="./img/Arts-video/acc.webp" alt="Acc">
+                        <p>Perchen Arts</p>
+                    </div>
+                    <div class="video-arts__prem-content">
+                        <img src="./img/Arts-video/Crown.svg" alt="Crown">
+                        <p>premium content</p>
+                    </div>
+                    <p class="video-arts__date">10/09/2021</p>
+                </div>
+            </div>
+        </section>
+        @@include('html/contact.html',{
+            "class":"arts-video__contact"
+        })
+    </main>
+    @@include('html/footer.html',{})
+</body>
+    <script type="module"  src="scripts/main.js"></script>
+</html>

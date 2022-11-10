@@ -1,0 +1,151 @@
+.artsVideo{
+    background-image: url('../img/Arts-video/Arts.webp');
+    background-position-x: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.arts-video__container {
+    margin-top: 48px;
+    max-width: 1140px;
+}
+.arts-video__span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    >span{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 0.1em;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+.video-arts__content {
+    position: relative;
+    margin-top: 25px;
+}
+.video-arts__teg {
+    width: 94.1%;
+}
+.video-arts__content-prem {
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(29, 31, 33, 0.8);
+    backdrop-filter: blur(13.5px);
+    border-radius: 12px;
+    width: 91.25%;
+    height: 50px;
+    padding: 8px 20px 8px 10px;
+    margin: 0 auto;
+}
+.video-arts__content-acc {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 26px;
+        color: #FCFFFF;
+        transform: translateY(1px);
+    }
+}
+.video-arts__prem-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateX(-24px);
+    >p{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        letter-spacing: 0.1em;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+.video-arts__date {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #C8D2DC;
+}
+.arts-video__contact{
+    margin-top: 85px;
+    margin-bottom: 92px;
+}
+
+@media (max-width: 768px){
+    .video-arts__teg{
+        width: 100%;
+    }
+    .video-arts__prem-content{
+        display: none;
+    }
+    .arts-video__span{
+        >img{
+            width: 18px;
+            height: 18px;
+        }
+        >span{
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    .video-arts__content-prem{
+        width: 100%;
+    }
+    .arts-video__container {
+        margin-top: 21px;
+    }
+    .video-arts__content {
+        margin-top: 20px;
+    }
+    .video-arts__content-prem {
+        width: 93.624%;
+        left: 11px;
+        bottom: 9px;
+        height: 44px;
+        padding: 6px 21px 6px 10px;
+    }
+    .arts-video__contact {
+        margin-top: 46px;
+        margin-bottom: 35px;
+        >p{
+            transform: translateY(-1px);
+        }
+    }
+    .video-arts__date {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .video-arts__content-acc {
+        gap: 13px;
+    }
+    .video-arts__content-acc>p {
+        transform: translateY(-1px);
+    }
+    .artsVideo{
+        background-image: url('../img/Arts-video/Arts-mob.webp');
+    }
+}
