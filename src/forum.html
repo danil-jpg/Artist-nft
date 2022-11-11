@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{"title":"Artist-NFT"})
+<body class="forumPage" id="forumPage">
+    @@include('html/header.html',{})
+    <main class="forum-main">
+        <section class="forum-swiper">
+            <div class="forum-swiper-block__container">
+                <h1 class="forum__title">Forum</h1>
+                <p class="forum__text">Popular questions</p>
+
+                <div class="swiper-forum">
+                    <div class="swiper-wrapper">
+                        @@include('html/forumSwiper.html',{})
+                        @@include('html/forumSwiper.html',{
+                            "class-forum":"slide-forum-2"
+                        })
+                        @@include('html/forumSwiper.html',{
+                            "class-forum":"slide-forum-3"
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forum-search__container">
+            <div class="forum-search__block-left">
+                <form class="forum-search__form">
+                    <input type="search" placeholder="Search" class="forum-search__input">
+                    <button class="forum-btn__input">
+                        <p>Search</p>
+                    </button>
+                </form>
+                @@include('html/forumComents.html',{
+                    "style":"forum-coments__text",
+                    "class-input":"forum-coments__input-none"
+                })
+                @@include('html/forumComents.html',{
+                    "class-btn":"forum-coments__btn-none",
+                    "class-input":"forum-coments__input-none"
+                })
+                @@include('html/forumComents.html',{
+                    "style":"forum-coments__text"
+                })
+            </div>
+            <div class="forum-search__block-right">
+                <div class="forum-search__asking">
+                    <span class="forum-search__asking-span">ASKING</span>
+                    <h3 class="forum-search__asking-title">Let your question here</h3>
+                    <div class="forum-search__asking-name">
+                        <p>Your name</p>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="forum-search__asking-question">
+                        <p>Your question</p>
+                        <textarea placeholder="Your name"></textarea>
+                    </div>
+                    <button>Make a question</button>
+                </div>
+                <div class="forum-search__stats">
+                    <div class="forum-search__stats-span">
+                        <img src="./img/Forum/stats.webp" alt="Stats">
+                        <span>STATS</span>
+                    </div>    
+                    <div class="forum-search__stats-block">
+                        <div class="forum-search__stats-content">
+                            <h6>TOTAL QUESTIONS</h6>
+                            <p>10 999</p>
+                        </div>
+                        <div class="forum-search__stats-content">
+                            <h6>ANSWERS</h6>
+                            <p>209 821</p>
+                        </div>
+                        <div class="forum-search__stats-content">
+                            <h6>ANSWERED</h6>
+                            <p>4 560</p>
+                        </div>
+                        <div class="forum-search__stats-content">
+                            <h6>UNANSWERED</h6>
+                            <p>8 320</p>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+    <script type="module"  src="scripts/main.js"></script>
+</html>
