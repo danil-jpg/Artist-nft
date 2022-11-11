@@ -2,7 +2,12 @@
 <html lang="en">
     @@include('html/head.html',{"title":"Artist-NFT"})
 <body class="artsVideo" id="lendingMain">
-    @@include('html/header.html',{})
+    @@include('html/header.html',{
+        "classUl":"header-menu__list-prem",
+        "classA":"header-menu__link-prem",
+        "classBtn":"header-btn__left-prem",
+        "classBtnPrem":"header-btn__right-prem"
+    })
     <main class="artsVideo-main">
         @@include('html/arctCard.html',{})
         <section class="arts-video__container">

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{"title":"Artist-NFT"})
+<body class="nftsPage" id="lendingMain">
+    @@include('html/header.html',{
+        "classUl":"header-menu__list-prem",
+        "classA":"header-menu__link-prem",
+        "classBtn":"header-btn__left-prem",
+        "classBtnPrem":"header-btn__right-prem"
+    })
+    <main class="nftsPage-main">
+        <section class="nfts-text__conatiner">
+            <h1>Unique. Bright. Non-fungible token</h1>
+            <p>Indulgence announcing uncommonly met she continuing two unpleasing terminated</p>
+        </section>
+        <section class="nfts-grid__container">
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-1",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-2",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-3",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-4",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-5",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-6",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-7",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-8",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-9",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-10",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-11",
+                "swipLendingNumber":"2"
+            })
+            @@include('html/lendingSwiper.html',{
+                "class-forum":"slide-forum__nfts-12",
+                "swipLendingNumber":"2"
+            })
+        </section>
+        <section class="nfts-next-prev__container">
+            <button class="nfts-prev__btn">
+                <img src="./img/Nfts/prev.svg" alt="prev">
+            </button>
+            <div class="nfts-next-prev__block">
+                <p class="nfts-next-prev__text">
+                    <span>1</span>
+                </p>
+                <p class="nfts-next-prev__text active">
+                    <span>2</span>
+                </p>
+                <p class="nfts-next-prev__text">
+                    <span>...</span>
+                </p>
+                <p class="nfts-next-prev__text">
+                    <span>4</span>
+                </p>
+                <p class="nfts-next-prev__text">
+                    <span>5</span>
+                </p>
+            </div>
+
+            <button class="nfts-next__btn">
+                <img src="./img/Nfts/next.svg" alt="next">
+            </button>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+    <script type="module" src="scripts/main.js"></script>
+</html>
