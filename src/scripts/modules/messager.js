@@ -27,7 +27,16 @@ function messager () {
 
   const swiperBlock = new Swiper('.swiper', {
     spaceBetween: 28,
-    slidesPerView: 4.6
+    slidesPerView: 4.6,
+
+    breakpoints: {
+      374: {
+        slidesPerView: 4.6
+      },
+      320: {
+        slidesPerView: 3
+      }
+    }
   })
 
   function tabs () {
