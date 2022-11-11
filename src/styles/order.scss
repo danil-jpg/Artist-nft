@@ -1361,6 +1361,75 @@
     .module__right-wr__workers {
         grid-column: 2/3;
     }
+    .orders__item_mob-title {
+        width: 94%;
+    }
+    .orders__item_mob-wr {
+        padding: 21px 19px 17px 14px;
+    }
+    .orders__items-wr {
+        padding: 0;
+    }
+    .orders__item_mob_sucsess-text-wr {
+        display: flex;
+        justify-content: space-between;
+    }
+    .orders__text-status {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        /* identical to box height, or 107% */
+
+        /* text */
+
+        color: #fcffff;
+    }
+    .orders__text-sucsess {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #c5ff98;
+        position: relative;
+        &::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            left: -14px;
+            top: 11px;
+            background: #c5ff98;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+        }
+    }
+    .orders__item_mob_sucsess-text-wr {
+        margin-top: 12px;
+    }
+    .orders__text-sucsess {
+        transform: translate(0, -6px);
+    }
+    .orders__item_mob-wr {
+        padding: 21px 21px 17px 16px;
+        width: 93%;
+    }
+
+    .orders__item_mob_hor-line {
+        // display: block;
+    }
+    .orders__item_mob-wr_bottom {
+        margin-top: 6px;
+    }
+    .orders__item_mob_hor-line-last {
+        margin-top: 1px;
+        display: block;
+    }
+    .orders__item_mob-wr {
+        height: 329px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
