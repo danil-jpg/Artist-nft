@@ -293,6 +293,20 @@ function watch () {
   gulp.watch(paths.images.src, img)
 }
 
+function watchP () {
+  browserSync.init({
+    server: 'docs/',
+    port: 3003
+  })
+  gulp.watch(paths.componentsHtml.src, gulp.series(htmlMinP))
+  gulp.watch(paths.html.src, gulp.series(htmlMinP))
+  gulp.watch(paths.componentsHtml.dest).on('change', browserSync.reload)
+  gulp.watch(paths.styles.src, gulp.series(stylesMinP))
+  gulp.watch(paths.scripts.src, scriptsP)
+  gulp.watch(paths.fonts.src, fontsP)
+  gulp.watch(paths.images.src, imgP)
+}
+
 gulp.task('fonts', fonts)
 
 function fonts () {
@@ -332,7 +346,7 @@ const build = gulp.series(
 )
 
 const prod = gulp.series(
-  clean, imgP, fontsP, htmlMinP, stylesMinP, scriptsP, criticalP
+  clean, imgP, fontsP, htmlMinP, stylesMinP, scriptsP, criticalP, watchP
 )
 
 // Цепочка прод пока тестовая
