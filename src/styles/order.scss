@@ -80,6 +80,7 @@
     background: #1d1f21;
     border-radius: 14px;
     height: 90px;
+    max-width: 990px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -161,6 +162,7 @@
     font-size: em(12);
     line-height: lh(18, 12);
     color: #fcffff;
+    display: block;
 }
 .orders__delivery-text_bottom {
     font-style: normal;
@@ -437,6 +439,229 @@
 .workers_mob {
     display: none;
 }
+
+.CustomerHTML {
+    .module__footer {
+        margin-top: 622px;
+    }
+
+    .orders__header-text:nth-of-type(1) {
+    }
+    .orders__header-text:nth-of-type(2) {
+        margin-left: 21px;
+    }
+    .orders__header-text:nth-of-type(3) {
+        margin-left: 21px;
+    }
+    .orders__header-text:nth-of-type(4) {
+        margin-left: 170px;
+    }
+    .orders__header-text:nth-of-type(5) {
+        margin-left: 90px;
+    }
+    .orders__header-text:nth-of-type(6) {
+        margin-left: 99px;
+    }
+    .orders__header-text:nth-of-type(7) {
+        margin-left: 18px;
+    }
+    .orders__header-text:nth-of-type(8) {
+        margin-left: 73px;
+    }
+
+    .orders__items-wr {
+        padding-left: 4px;
+    }
+
+    .orders__type-text {
+    }
+
+    .orders__color-text {
+    }
+
+    .orders__email-text {
+        margin-left: 24px;
+    }
+
+    .orders__size-text {
+        margin-left: 14px;
+    }
+
+    .orders-comment-wr {
+        margin-left: 25px;
+    }
+
+    .orders-delivery-wr {
+        margin-left: 19px;
+    }
+    .orders__sucsess-btn {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #c5ff98;
+        width: 103px;
+        height: 40px;
+        background: rgba(197, 255, 152, 0.1);
+        border-radius: 10px;
+    }
+    .orders__item-wr {
+        max-width: 1019px;
+    }
+    .orders__type-text {
+        margin-left: 25px;
+    }
+    .orders__items-wr {
+        padding-right: 0;
+    }
+
+    .orders__color-text {
+        margin-left: 35px;
+    }
+
+    .orders__sucsess-btn {
+        margin-left: 19px;
+    }
+
+    .orders__action-btn {
+        margin-left: 9px;
+        width: 103px;
+    }
+}
+
+.WorkerHTML {
+    .module__footer {
+        margin-top: 626px;
+    }
+    .orders__header-wr {
+        display: none;
+    }
+    .orders__item-wr {
+        // display: none;
+    }
+    .orders__items-wr {
+        padding-left: 21px;
+        padding-right: 24px;
+    }
+    .orders__item-wr {
+        margin-bottom: 16px;
+    }
+
+    .orders__type-text {
+        margin-left: 25px;
+    }
+
+    .orders__items-wr:not(.orders__items-wr_mobile) {
+        width: 100%;
+        max-width: 90%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.orders__item-artist-wr {
+    width: 100%;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    max-width: 990px;
+}
+.orders__text-block {
+    background: #1d1f21;
+    border-radius: 12px;
+}
+
+.orders__text-block_3 {
+    background: url(../img/artistAdmin/card-payment.webp) no-repeat #1d1f21;
+    background-position: 98% bottom;
+}
+
+.orders__text-block {
+    max-width: 297px;
+    height: 137px;
+    margin-right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orders__somewr {
+    width: 79%;
+}
+.orders__text-block_3 {
+    .orders__per {
+        display: block;
+        margin-top: 0px;
+        transform: translate(0, -3px);
+    }
+}
+.orders__text-block_2 {
+    .orders__somewr {
+        width: 81%;
+    }
+}
+
+.orders__amount-sp {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #fcffff;
+}
+.orders__last-worker-block {
+    width: 83%;
+}
+.orders__last-worker-block {
+    width: 83%;
+}
+// .orders__text-block_3 {width: 297px;
+//     height: 137px;
+// }
+.orders__amount {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #fcffff;
+}
+.orders__per {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #c8d2dc;
+}
+
+.orders__worker-btn {
+    width: 116px;
+    height: 40px;
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    border-radius: 8px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d1f21;
+}
+
+.orders__item-artist-wr {
+    margin-bottom: 17px;
+}
+
+.orders__per-mob {
+    display: none;
+}
+
 @media screen and (min-width: 1281px) {
     .orders__header-wr {
         display: none;
@@ -562,7 +787,7 @@
                 position: absolute;
                 top: -63px;
                 left: 0;
-                width: 140px;
+                width: 0px;
                 pointer-events: visible;
                 font-family: "Proxima Nova";
                 font-style: normal;
@@ -704,6 +929,23 @@
             position: relative;
             &::after {
                 content: "Plan";
+                position: absolute;
+                top: -63px;
+                left: 0;
+                font-family: "Proxima Nova";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #fcffff;
+            }
+        }
+    }
+    .orders__item-wr:nth-of-type(1) {
+        .orders__sucsess-btn {
+            position: relative;
+            &::after {
+                content: "Status";
                 position: absolute;
                 top: -63px;
                 left: 0;
@@ -1252,6 +1494,242 @@
     .module__right-wr__workers {
         grid-column: 2/3;
     }
+    .orders__item_mob-title {
+        width: 94%;
+    }
+    .orders__item_mob-wr {
+        padding: 21px 19px 17px 14px;
+    }
+    .orders__items-wr {
+        padding: 0;
+    }
+    .orders__item_mob_sucsess-text-wr {
+        display: flex;
+        justify-content: space-between;
+    }
+    .orders__text-status {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        /* identical to box height, or 107% */
+
+        /* text */
+
+        color: #fcffff;
+    }
+    .orders__text-sucsess {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #c5ff98;
+        position: relative;
+        &::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            left: -14px;
+            top: 11px;
+            background: #c5ff98;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+        }
+    }
+    .orders__item_mob_sucsess-text-wr {
+        margin-top: 12px;
+    }
+    .orders__text-sucsess {
+        transform: translate(0, -6px);
+    }
+    .orders__item_mob-wr {
+        padding: 21px 21px 17px 16px;
+        width: 93%;
+    }
+
+    .orders__item_mob_hor-line {
+        // display: block;
+    }
+    .orders__item_mob-wr_bottom {
+        margin-top: 6px;
+    }
+    .orders__item_mob_hor-line-last {
+        margin-top: 1px;
+        display: block;
+    }
+    .CustomerHTML {
+        .orders__item_mob-wr {
+            height: 329px;
+        }
+    }
+    .orders__item-artist-wr {
+        grid-template-columns: 1fr 1fr;
+    }
+    .WorkerHTML .orders__items-wr {
+        padding: 0;
+    }
+    .WorkerHTML .orders__items-wr:not(.orders__items-wr_mobile) {
+        max-width: 100%;
+    }
+    .orders__item-artist-wr {
+        column-gap: 11px;
+        row-gap: 15px;
+    }
+    .orders__text-block_1 {
+        background: #212426;
+        border-radius: 12px;
+        height: 72px;
+        margin-right: 0;
+        text-align: center;
+        .orders__somewr {
+            background: #212426;
+            border-radius: 12px;
+        }
+    }
+
+    .orders__amount {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 166% */
+
+        /* text */
+        color: #fcffff;
+    }
+
+    .orders__per {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        /* identical to box height, or 175% */
+
+        /* secondary */
+        color: #c8d2dc;
+    }
+
+    .orders__text-block_2 {
+        background: #212426;
+        border-radius: 12px;
+        height: 72px;
+        text-align: center;
+    }
+
+    .orders__text-block_3 {
+        background: #212426;
+        border-radius: 12px;
+        grid-column: 1/3;
+    }
+    .orders__item-artist-wr {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            pointer-events: all;
+            content: "Statistic";
+            ont-family: "Proxima Nova";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height, or 150% */
+
+            /* text */
+
+            color: #fcffff;
+
+            left: 0;
+            top: 0;
+        }
+    }
+    .orders__item-artist-wr {
+        width: per(345, 375);
+    }
+    .orders__text-block_1 {
+        .orders__per {
+            margin-top: 0px;
+            transform: translate(0, -2px);
+        }
+    }
+
+    .orders__text-block_2 {
+        margin-right: 0;
+        .orders__per {
+            display: none;
+        }
+    }
+
+    .orders__text-block_1,
+    .orders__text-block_2 {
+        margin-top: 24px;
+    }
+
+    .orders__text-block_3 {
+        margin-right: 0;
+        max-width: 100%;
+        height: 147px;
+        background-color: linear-gradient(
+            94.78deg,
+            rgba(104, 201, 255, 0.1) 9.27%,
+            rgba(209, 181, 255, 0.1) 84.06%
+        );
+        border-radius: 12px;
+    }
+    .WorkerHTML {
+        .orders__item_mob-title {
+            display: none;
+        }
+
+        .orders__item_mob-wr {
+            padding: 18px 21px 17px 19px;
+        }
+        .orders__item_mob-wr_bottom {
+            margin-top: 11px;
+        }
+    }
+    .orders__item-artist-wr::after {
+        top: -14px;
+    }
+    .orders__last-worker-block {
+        width: 87%;
+        transform: translate(0, -5px);
+    }
+    .orders__text-block_3 {
+        background: url(../img/artistAdmin/card-payment-mob.webp),
+            linear-gradient(
+                94.78deg,
+                rgba(104, 201, 255, 0.1) 9.27%,
+                rgba(209, 181, 255, 0.1) 84.06%
+            );
+        background-repeat: no-repeat;
+        background-position: 100% bottom;
+        .orders__per {
+            font-family: "Proxima Nova";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #c8d2dc;
+        }
+    }
+    .orders__worker-btn {
+        transform: translate(0, 9px);
+    }
+    .orders__text-block_2 {
+        .orders__per-mob {
+            display: block;
+            transform: translate(0, -2px);
+        }
+    }
+    .orders__per {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1278,5 +1756,24 @@
 @media screen and (min-width: 785px) {
     .orders__item_mob_btn {
         margin-top: 27px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .orders__item_mob_btn {
+        margin-top: 10px;
+    }
+    .chat__mobile-author-wr {
+        width: 100%;
+    }
+
+    .chat__text-author {
+        width: 250px;
+        height: 97px;
+    }
+
+    .chat__last-text {
+        height: 114px;
+        width: 250px;
     }
 }

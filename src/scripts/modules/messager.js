@@ -1,6 +1,6 @@
 import Swiper from 'swiper'
 
-function messager () {
+function messager (firstPar = false, secondPar = false, thirdPar = false) {
   const menuTrigger = document.querySelector('.module-header__burger-wr')
   const menu = document.querySelector('.module__left-wr')
   const elemToBlur = document.querySelectorAll('.module__content>*:not(.module__left-wr)')
@@ -27,7 +27,16 @@ function messager () {
 
   const swiperBlock = new Swiper('.swiper', {
     spaceBetween: 28,
-    slidesPerView: 4.6
+    slidesPerView: 4.6,
+
+    breakpoints: {
+      374: {
+        slidesPerView: 4.6
+      },
+      320: {
+        slidesPerView: 3
+      }
+    }
   })
 
   function tabs () {
@@ -35,8 +44,6 @@ function messager () {
     const tabBlocks = document.querySelectorAll('.module__content>*:not(.module__left-wr)')
     const triggersText = document.querySelectorAll('.module__tab-text')
     const triggersImg = document.querySelectorAll('.module__tab-trigger-wr img')
-
-    console.log(triggersImg)
 
     triggers.forEach((item, index) => {
       item.addEventListener('click', (e) => {
@@ -55,7 +62,10 @@ function messager () {
             item.setAttribute('src', 'img/Owner/orders-icon.svg')
           }
           if (index === 2) {
-            item.setAttribute('src', 'img/Owner/nft-orders-icon.svg')
+            if (document.querySelector('.CustomerHTML') || document.querySelector('.WorkerHTML')) {
+            } else {
+              item.setAttribute('src', 'img/Owner/nft-orders-icon.svg')
+            }
           }
           if (index === 3) {
             item.setAttribute('src', 'img/Owner/workers-icon.svg')
@@ -65,22 +75,46 @@ function messager () {
         triggersText[index].classList.add('module__tab-text_chosen')
         tabBlocks[index].style.display = 'grid'
 
-        if (index === 0) {
-          triggersImg[index].setAttribute('src', 'img/Owner/message-icon-active.webp')
+        function changeIcon (owner, customer, workers) {
+          if (owner === true) {
+            if (index === 0) {
+              triggersImg[index].setAttribute('src', 'img/Owner/message-icon-active.webp')
+            }
+            if (index === 1) {
+              triggersImg[index].setAttribute('src', 'img/Owner/order-active.svg')
+            }
+            if (index === 2) {
+              if (item.classList.contains('module__spec-spec') === false) {
+                triggersImg[index].setAttribute('src', 'img/Owner/nft-order-active.svg')
+              }
+            }
+            if (index === 3) {
+              triggersImg[index].setAttribute('src', 'img/Owner/workers-active.svg')
+            }
+          }
+          if (customer === true) {
+            if (index === 0) {
+              triggersImg[index].setAttribute('src', 'img/Owner/message-icon-active.webp')
+            }
+            if (index === 1) {
+              triggersImg[index].setAttribute('src', 'img/Owner/order-active.svg')
+            }
+          }
+          if (workers === true) {
+            if (index === 0) {
+              triggersImg[index].setAttribute('src', 'img/Owner/message-icon-active.webp')
+            }
+            if (index === 1) {
+              triggersImg[index].setAttribute('src', 'img/artistAdmin/active.svg')
+            }
+          }
         }
-        if (index === 1) {
-          triggersImg[index].setAttribute('src', 'img/Owner/order-active.svg')
-        }
-        if (index === 2) {
-          triggersImg[index].setAttribute('src', 'img/Owner/nft-order-active.svg')
-        }
-        if (index === 3) {
-          triggersImg[index].setAttribute('src', 'img/Owner/workers-active.svg')
-        }
+        changeIcon(firstPar, secondPar, thirdPar)
       })
     })
   }
 
   tabs()
 }
+
 export default messager

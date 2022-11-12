@@ -245,6 +245,45 @@
     }
 }
 
+.admin__btn {
+    a:active {
+        color: unset;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+    }
+    a:hover {
+        font-size: 20px;
+    }
+}
+
+.chat-list__user-wr {
+    transition: 0.3s;
+    &:active {
+        background: linear-gradient(
+            94.78deg,
+            rgba(104, 201, 255, 0.1) 9.27%,
+            rgba(209, 181, 255, 0.1) 84.06%
+        );
+
+        .chat-list__user_name {
+            background: linear-gradient(
+                94.78deg,
+                #68c9ff 9.27%,
+                #d1b5ff 84.06%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+}
 @media screen and (max-width: 1440px) {
     .admin__wr {
         width: 410px;

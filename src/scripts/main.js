@@ -16,21 +16,23 @@ window.addEventListener('DOMContentLoaded', () => {
   const pricingPage = document.querySelector('#pricingPage')
   const paymentPage = document.querySelector('#paymentPage')
   const forumPage = document.querySelector('#forumPage')
-  const messagerPage = document.querySelector('.MessagerHTML')
+  const ownerPage = document.querySelector('.OwnerHTML')
+  const customerPage = document.querySelector('.CustomerHTML')
+  const workersPage = document.querySelector('.WorkerHTML')
 
   if (lendingPage) {
     burger()
     lending()
   }
-  if (auctionPage){
+  if (auctionPage) {
     burger()
     auction()
   }
-  if(pricingPage){
+  if (pricingPage) {
     burger()
     pricing()
   }
-  if (paymentPage){
+  if (paymentPage) {
     burger()
     payment()
   }
@@ -41,8 +43,13 @@ window.addEventListener('DOMContentLoaded', () => {
   if (adminPage) {
     admin()
   }
-
-  if (messagerPage) {
-    messager()
+  if (workersPage) {
+    messager(false, false, true)
+  }
+  if (customerPage) {
+    messager(false, true)
+  }
+  if (ownerPage) {
+    messager(true)
   }
 })
