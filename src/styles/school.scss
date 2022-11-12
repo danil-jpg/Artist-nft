@@ -1,0 +1,471 @@
+.school-page{
+    background-image: url('../img/School/School.webp');
+    background-position-x: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.school-main-register__container {
+    display: flex;
+    margin-top: 23px;
+    max-width: 1140px;
+}
+.school-main-register__left {
+    margin-top: 151px;
+    margin-left: 2px;
+    >h1{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 65px;
+        color: #FCFFFF;
+    }
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+        max-width: 271px;
+        margin-top: 16px;
+    }
+    >a{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 16px;
+        width: 209px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #1D1F21;
+        margin-top: 40px;
+    }
+}
+.school-main-register__icon {
+    margin-right: 8px;
+}
+.benefits-school{
+    margin-top: 100px;
+}
+
+
+.school-artist__container{
+    max-width: 1140px;
+    margin-top: 73px;
+    padding: 0 13px 0 15px;
+}
+.school-artist__block-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    >h3{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #FCFFFF;
+    }
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FCFFFF;
+        text-align: center;
+        max-width: 415px;
+        margin-top: 16px;
+    }
+}
+.school-offer__block{
+    margin-top: 93px;
+}
+.school-offer__icon-1{
+    height: 240px;
+    >img{
+        top: 2px;
+    }
+}
+.school-offer__die{
+    top: 155px;
+}
+.school-offer__text{
+    margin-top: 22px;
+}
+.school-offer__icon-2{
+    height: 240px !important;
+}
+.school-offer__text-2{
+    margin-top: 22px;
+}
+.school-offer__text-3{
+    margin-top: 22px;
+}
+.pricing-offer__content:hover{
+    .school-offer__text,
+    .school-offer__text-2,
+    .school-offer__text-3{
+        margin-top: 28px;
+    }
+} 
+.pricing-offer__content:hover{
+    .school-offer__die {
+        top: 161px;
+    }
+} 
+
+.school-register__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+    margin-bottom: 67px;
+}
+.school-register__title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #FCFFFF;
+}
+.school-register__text-already {
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    border-radius: 12px;
+    width: 191px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1D1F21;
+    margin-top: 8px;
+}
+.school-register__input {
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C8D2DC;
+    }
+    >input{
+        width: 410px;
+        height: 64px;
+        background: #212426;
+        border-radius: 9px;
+        padding: 0px 0px 0px 32px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(200, 210, 220, 0.6);
+        margin-top: 7px;
+    }
+    >textarea{
+        resize: none;
+        background: #212426;
+        border-radius: 9px;
+        width: 410px;
+        height: 120px;
+        margin-top: 7px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(200, 210, 220, 0.6);
+        padding: 21px 32px 20px 32px;
+    }
+}
+.school-register__input-name{
+    margin-top: 20px;
+}
+.school-register__input-mail {
+    margin-top: 8px;
+}
+.school-register__input-comment {
+    margin-top: 8px;
+}
+.school-register__pain {
+    margin-top: 5px;
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C8D2DC;
+        margin-left: -2px;
+    }
+}
+.school-register__pain-btn {
+    display: flex;
+    gap: 23px;
+}
+.school-register__btn {
+    background: #212426;
+    border-radius: 9px;
+    width: 120px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+    >p{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    &.active{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 9px;
+        width: 120px;
+        height: 64px;
+        >p{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: #1D1F21;
+            -webkit-text-fill-color: #1D1F21;
+        }
+    }
+}
+.school-register__btn-link{
+    background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+    border-radius: 16px;
+    width: 406px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1D1F21;
+    margin-top: 40px;
+}
+.school-register__form-agree{
+    width: 407px;
+    margin-top: 21px;
+}
+
+@media (max-width: 1200px){
+    .school-main-register__container{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .school-main-register__left {
+        margin-top: 70px;
+        margin-left: 2px;
+        max-width: 495px;
+    }
+    .school-main-register__icon{
+        width: 450px;
+        img{
+            width: 440px;
+        }
+    }
+    // ================
+    .pricing-offer__content:hover {
+        transform: translateY(0);
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 18px;
+        background-image: none;
+    }
+    .pricing-offer__content-1.active, .pricing-offer__content-2.active, .pricing-offer__content-3.active {
+        display: block;
+        width: 100%;
+        background-image: none;
+        height: fit-content;
+        padding-bottom: 18px;
+    }
+    // ================
+}
+@media (max-width: 768px){
+    .school-main-register__container {
+        flex-direction: column;
+    }
+    .school-main-register__icon{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 576px){
+    .school-page{
+        background-image: url('../img/School/mobile school.webp');
+    }
+    .school-main-register__left{
+        margin-top: 67px;
+        margin-left: 0;
+        >h1{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 40px;
+            color: #FCFFFF;
+            max-width: 250px;
+        }
+        >p{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: #FCFFFF;
+            margin-top: 8px;
+        }
+        >a{
+            width: 193px;
+            height: 52px;
+            margin-top: 24px;
+            font-size: 15px;
+            line-height: 26px;
+            border-radius: 12px;
+        }
+    }
+    .school-main-register__icon {
+        width: 100%;
+        margin-right: 0;
+        overflow: hidden;
+        picture{
+            >img{
+                width: 376px;
+                height: 339.64px;
+                position: relative;
+                left: -16px;
+            }
+        }
+    }
+    .school-register__input{
+        >input{
+            width: 100%;
+        }
+        >textarea{
+            width: 100%;
+        }
+    }
+    .school-register__btn-link{
+        width: 100%;
+    }
+    .school-register__form-agree{
+        width: 100%;
+    }
+    .school-register__btn,
+     .school-register__btn.active {
+        width: 109px;
+        height: 50px;
+        >p{
+            padding-bottom: 1px;
+        }
+    }
+    .school-offer__block {
+        margin-top: 19px;
+    }
+    .school-register__input-name {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .school-register__input-mail {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .school-register__input-comment {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .school-register__pain-btn {
+        gap: 9px;
+    }
+    .school-main-register__container{
+        margin-top: 0;
+        align-items: flex-start;
+    }
+    .benefits-school {
+        margin-top: 104px;
+    }
+    .school-artist__block-text{
+        align-items: flex-start;
+        margin-top: 123px;
+        margin-left: -2px;
+        margin-bottom: 88px;
+        >h3{
+            font-size: 26px;
+            line-height: 34px;
+        }
+        >p{
+            font-size: 15px;
+            line-height: 24px;
+            text-align: left;
+            max-width: 303px;
+            margin-top: 4px;
+        }
+    }
+    .school-register__container{
+        align-items: flex-start;
+        margin-top: 104px;
+        margin-bottom: 31px;
+        >h5{
+            font-size: 26px;
+            line-height: 34px;
+        }
+    }
+    .school-register__input-name{
+        margin-top: 21px;
+    }
+    .school-register__input-mail {
+        margin-top: 8px;
+    }
+    .school-register__input-comment {
+        margin-top: 8px;
+    }
+    .school-register__pain>p {
+        margin-left: 0px;
+    }
+    .school-register__btn-link {
+        margin-top: 18px;
+        height: 56px;
+    }
+    .school-register__form-agree{
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 374px){
+    .school-main-register__icon picture>img {
+        width: 100%;
+        height: 269.64px;
+    }
+    .school-register__pain {
+        width: 100%;
+    }
+    .school-register__btn,
+    .school-register__btn.active {
+        width: 33.333%;
+    }
+}

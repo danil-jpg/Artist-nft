@@ -1,0 +1,439 @@
+.header-menu__list-prem{
+    li{
+        &:nth-child(1){
+            margin-right: 18px;
+        }
+        &:nth-child(2){
+            margin-right: 18px;
+        }
+        &:nth-child(3){
+            margin-right: 30px;
+        }
+        &:nth-child(4){
+            margin-right: 31px;
+        }
+        &:nth-child(5){
+            margin-right: 31px;
+        }
+        &:nth-child(6){
+            margin-right: 30px;
+        }
+    }
+}
+.header-menu__link-prem{
+    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    border-radius: 8px;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >img{
+        display: none;
+    }
+    >p{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+.header-btn__right-prem{
+    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    border-radius: 12px;
+    margin-right: 15px;
+    margin-left: 4px;
+    >p{
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+.header-btn__left-prem{
+    display: none;
+}
+
+.nftsPage{
+    background-image: url('../img/Nfts/Nfts.webp');
+    background-position-x: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.nfts-text__conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FCFFFF;
+    margin-top: 48px;
+    >h1{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 65px;
+        max-width: 569px;
+    }
+    >p{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 415px;
+        margin-top: 16px;
+    }
+}
+
+.nfts-grid__container {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(4, 600px);
+    grid-column-gap: 31px;
+    grid-row-gap: 24px;
+    margin-top: 50px;
+}
+    
+.slide-forum__nfts-1 { grid-area: 1 / 1 / 2 / 2; }
+.slide-forum__nfts-2 { grid-area: 1 / 2 / 2 / 3; }
+.slide-forum__nfts-3 { grid-area: 1 / 3 / 2 / 4; }
+.slide-forum__nfts-4 { grid-area: 2 / 1 / 3 / 2; }
+.slide-forum__nfts-5 { grid-area: 2 / 2 / 3 / 3; }
+.slide-forum__nfts-6 { grid-area: 2 / 3 / 3 / 4; }
+.slide-forum__nfts-7 { grid-area: 3 / 1 / 4 / 2; }
+.slide-forum__nfts-8 { grid-area: 3 / 2 / 4 / 3; }
+.slide-forum__nfts-9 { grid-area: 3 / 3 / 4 / 4; }
+.slide-forum__nfts-10 { grid-area: 4 / 1 / 5 / 2; }
+.slide-forum__nfts-11 { grid-area: 4 / 2 / 5 / 3; }
+.slide-forum__nfts-12 { grid-area: 4 / 3 / 5 / 4; }
+
+.nfts-next-prev__container {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    margin-bottom: 64px;
+}
+.nfts-prev__btn {
+    border: 2px solid #525960;
+    border-radius: 10px;
+    background: #212426;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nfts-next-prev__block{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.nfts-next-prev__text {
+    background: #212426;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >span{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    &.active {
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 10px;
+        width: 48px;
+        height: 48px;
+        >span{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px; 
+            color: #1D1F21;
+        }
+    }
+}
+
+.nfts-next__btn {
+    border: 2px solid #525960;
+    border-radius: 10px;
+    background: #212426;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px){
+    .nfts-grid__container{
+        max-width: 960px;
+    }
+    .nfts-grid__container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+        
+        .slide-forum__nfts-1 {
+            grid-area: 1 / 1 / 2 / 2;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            }
+        }
+        .slide-forum__nfts-2 { 
+            grid-area: 1 / 2 / 2 / 3; 
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            }
+        }
+        .slide-forum__nfts-3 { 
+            grid-area: 2 / 1 / 3 / 2;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            } 
+        }
+        .slide-forum__nfts-4 { 
+            grid-area: 2 / 2 / 3 / 3;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            } 
+        }
+        .slide-forum__nfts-5 { 
+            grid-area: 3 / 1 / 4 / 2;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            } 
+        }
+        .slide-forum__nfts-6 { 
+            grid-area: 3 / 2 / 4 / 3;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            } 
+        }
+        .slide-forum__nfts-7 { 
+            grid-area: 4 / 1 / 5 / 2;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            } 
+        }
+        .slide-forum__nfts-8 { 
+            grid-area: 4 / 2 / 5 / 3; 
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            }
+        }
+        .slide-forum__nfts-9 { 
+            grid-area: 5 / 1 / 6 / 2;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            } 
+        }
+        .slide-forum__nfts-10 {
+            grid-area: 5 / 2 / 6 / 3;
+            .lending-slide__block{
+                width: 350px;
+                margin: 0 auto;
+            } 
+        }
+        .slide-forum__nfts-11,
+        .slide-forum__nfts-12{
+            display: none;
+        }
+}
+@media (max-width: 768px){
+    .nftsPage{
+        background: #282828;
+    }
+    .nfts-grid__container{
+        max-width: 540px;
+        grid-column-gap: 20px;
+        grid-row-gap: 16px;
+        margin-top: 44px;
+    }
+    .slide-forum__nfts-1,
+    .slide-forum__nfts-2,
+    .slide-forum__nfts-3,
+    .slide-forum__nfts-4,
+    .slide-forum__nfts-5,
+    .slide-forum__nfts-6,
+    .slide-forum__nfts-7,
+    .slide-forum__nfts-8,
+    .slide-forum__nfts-9,
+    .slide-forum__nfts-10{
+        .lending-slide__block{
+            width: 100%;
+            padding: 0px 0px 0px 0px;
+            >img{
+                border-radius: 7.73123px;
+                inline-size: 100%;
+            }
+            .lending-slide__block-content{
+                padding: 0px 11px 0;
+                .lending-slide__block-buy{
+                    flex-direction: column;
+                    border: none;
+                    align-items: flex-start;
+                    padding: 0px 0px 0px 0px;
+                    margin: 0px 0px 0px 0px;
+                    >a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .nfts-text__conatiner{
+        margin-top: 26px;
+    }
+    .header-btn__right-prem{
+        margin-right: 0;
+    }
+    .nfts-text__conatiner{
+        >h1{
+            font-size: 36px;
+            line-height: 40px;
+            max-width: 330px;;
+        }
+        >p{
+            font-size: 15px;
+            line-height: 24px;
+            max-width: 322px;
+        }
+    }
+    .nfts-next-prev__container{
+        gap: 15px;
+        margin-top: 28px;
+        margin-bottom: 56px;
+    }
+    .nfts-next-prev__text{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 26px;
+        &.active{
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+    .nfts-prev__btn,
+    .nfts-next__btn{
+        width: 40px;
+        height: 40px;
+    }
+        
+}
+@media (max-width: 576px){
+    .nfts-grid__container{
+        width: 100%;
+    }
+    .slide-forum__nfts-1,
+    .slide-forum__nfts-2,
+    .slide-forum__nfts-3,
+    .slide-forum__nfts-4,
+    .slide-forum__nfts-5,
+    .slide-forum__nfts-6,
+    .slide-forum__nfts-7,
+    .slide-forum__nfts-8,
+    .slide-forum__nfts-9,
+    .slide-forum__nfts-10{
+        .lending-slide__block{
+            height: 339px;
+            >img{
+                height: 163px;
+            }
+            .lending-slide__block-content{
+                padding: 0px 11px 0;
+                .lending-slide__block-span-bottom{
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-top: 8px;
+                }
+                .lending-slide__block-title{
+                    font-size: 13px;
+                    line-height: 14px;
+                    margin-top: 0;
+                }
+                .lending-slide__block-text {
+                    font-size: 10px;
+                    line-height: 15px;
+                    margin-top: 5px;
+                }
+                .lending-slide__block-buy{
+                    margin-top: 9px;
+                    >p{
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                    >a{
+                        height: 34px;
+                        margin-top: 8px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 374px){
+    .slide-forum__nfts-1 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-10 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-2 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-3 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-4 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-5 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-6 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-7 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-8 
+    .lending-slide__block>img, 
+    .slide-forum__nfts-9 
+    .lending-slide__block>img {
+        height: 135px;
+    }
+    .slide-forum__nfts-1 .lending-slide__block, .slide-forum__nfts-10 .lending-slide__block, .slide-forum__nfts-2 .lending-slide__block, .slide-forum__nfts-3 .lending-slide__block, .slide-forum__nfts-4 .lending-slide__block, .slide-forum__nfts-5 .lending-slide__block, .slide-forum__nfts-6 .lending-slide__block, .slide-forum__nfts-7 .lending-slide__block, .slide-forum__nfts-8 .lending-slide__block, .slide-forum__nfts-9 .lending-slide__block {
+        height: fit-content;
+    }
+    .slide-forum__nfts-1 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-10 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-2 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-3 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-4 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-5 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-6 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-7 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-8 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy, .slide-forum__nfts-9 .lending-slide__block .lending-slide__block-content .lending-slide__block-buy {
+        margin-bottom: 10px;
+    }
+}
