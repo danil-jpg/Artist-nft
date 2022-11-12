@@ -271,6 +271,9 @@
         }
 }
 @media (max-width: 768px){
+    .nftsPage{
+        background: #282828;
+    }
     .nfts-grid__container{
         max-width: 540px;
         grid-column-gap: 20px;
