@@ -28,6 +28,24 @@ function admin () {
       //   adminTextToChange.innerHTML = 'Don’t have account yet? <span>Sign up</span>'
     }
   }
+
+  const customerCheck = document.querySelector('#Customer')
+  const adminCheck = document.querySelector('#Admin')
+  const workersCheck = document.querySelector('#Workers')
+  const hrefToChange = document.querySelector('.hrefToChange')
+  const labelBlock = document.querySelector('.admin__labels-wr')
+
+  labelBlock.addEventListener('click', () => {
+    if (customerCheck.checked) {
+      hrefToChange.setAttribute('href', 'customer.html')
+    }
+    if (adminCheck.checked) {
+      hrefToChange.setAttribute('href', 'Owner.html')
+    }
+    if (workersCheck.checked) {
+      hrefToChange.setAttribute('href', 'worker.html')
+    }
+  })
 }
 
 export default admin
