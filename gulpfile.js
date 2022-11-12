@@ -66,9 +66,11 @@ const paths = {
 }
 
 function clean () {
-  // return del(["dist/*", "!dist/src/img", "!dist/src/fonts"]);
-  return del(['dist/*', 'docs/*'])
-  // return del(['dcs/*', '!dist/src/img', '!dist/src/fonts'])
+  return del(['dist/*'])
+}
+
+function cleanP () {
+  return del(['docs/*'])
 }
 
 function criticalP () {
